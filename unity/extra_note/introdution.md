@@ -1,4 +1,4 @@
-期中製作2D遊戲([下載遊戲](https://github.com/stereomp3/note/blob/main/unity/Game/V2.0.2.rar))
+期中製作2D遊戲([下載遊戲](/stereomp3/note/raw/main/unity/Game/V2.0.2.rar))
 
 遊戲概述(有些功能未完成):
 
