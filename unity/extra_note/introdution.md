@@ -1,4 +1,7 @@
-期中製作2D遊戲
+期中製作2D遊戲([下載遊戲](https://github.com/stereomp3/note/blob/main/unity/Game/V2.0.2.rar))
+
+遊戲概述(有些功能未完成):
+
 玩家生命180，頭部60，身體60，尾巴60
 
 頭
@@ -131,5 +134,6 @@ Enemyswiter 裡面的 GameStage 關系到蠻多東西的，要注意!!
 ```
 
 
+Bug
 
 !! 第二關boss會無敵，不知道原因，隨從沒有尾線，static controller裡面要注意(目前放在一開始的canvas裡面)
