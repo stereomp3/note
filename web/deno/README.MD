@@ -10,16 +10,16 @@
 
 
 
-> **[git技巧](git push.md)**
+> **[git技巧](./git push.md)**
 
 
 
-> [Server](Server.md)
+> [Server](./Server.md)
 
 
 
-> [session](session.md)
+> [session](./session.md)
 
 
 
-> [Sqlite](Sqlite.md)
+> [Sqlite](./Sqlite.md)
