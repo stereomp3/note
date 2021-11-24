@@ -7,17 +7,15 @@
 學生|[魏仲彥](https://stereomp3.github.io/wp109b/homework/MyWeb8.0/MyWeb.html)
 學號末兩碼| 41
 
-> python
+> [python](./python)
 
-> c++
+> [c++](./c++)
 
-> javasript/css/html
+> [web](./web)
 
-> deno
+> [linux](./linux)
 
-> linx
-
-> unity
+> [unity](./unity)
 
 <hr>
 
