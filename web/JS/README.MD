@@ -18,5 +18,5 @@
 
 
 
-> [之前的筆記](https://github.com/stereomp3/wp109b/wiki)
+> [之前的筆記.](https://github.com/stereomp3/wp109b/wiki)
 
