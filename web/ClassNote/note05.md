@@ -22,26 +22,26 @@
 
 ```
 
-| <input type="range" min="0" max="50"> | 拉條可以設最大最小值，也可以用id配label的for                 |
+| `<input type="range" min="0" max="50">` | 拉條可以設最大最小值，也可以用id配label的for                 |
 | :-----------------------------------: | ------------------------------------------------------------ |
-|         <input type="search">         | 尋找通常會用id配label的for(說明)，再加name讓submit可以傳回到後端 |
-|         <input type="color">          | 選顏色                                                       |
-|          <input type="date">          | 選日期                                                       |
-|     <input type="datetime-local">     | 可以選日期和時間                                             |
-|         <input type="month">          | 選年和月                                                     |
-|          <input type="week">          | 選年和周                                                     |
-|          <input type="file">          | 放入文件檔案                                                 |
-|         <input type="hidden">         | 隱藏的，沒東西                                               |
-|         <input type="image">          | 放圖片                                                       |
-|         <input type="number">         | 輸入數字                                                     |
-|         <input type="email">          | 輸入信箱                                                     |
-|        <input type="password">        | 輸入密碼                                                     |
-|        <input type="checkbox">        | 多選框通常會設定id，搭配label的for指定選項                   |
-|         <input type="radio">          | 單選框通常會設定id，搭配label的for指定選項                   |
-|         <input type="reset">          | 所有form裡面的input重設                                      |
-|          <input type="tel">           | 填入電話                                                     |
-|          <input type="url">           | 傳網址                                                       |
-|         <input type="button">         | 普通按鍵                                                     |
+|         `<input type="search">`         | 尋找通常會用id配label的for(說明)，再加name讓submit可以傳回到後端 |
+|         `<input type="color">`          | 選顏色                                                       |
+|          `<input type="date">`          | 選日期                                                       |
+|     `<input type="datetime-local">`     | 可以選日期和時間                                             |
+|         `<input type="month">`          | 選年和月                                                     |
+|          `<input type="week">`          | 選年和周                                                     |
+|          `<input type="file">`          | 放入文件檔案                                                 |
+|         `<input type="hidden">`         | 隱藏的，沒東西                                               |
+|         `<input type="image">`          | 放圖片                                                       |
+|         `<input type="number">`         | 輸入數字                                                     |
+|         `<input type="email">`          | 輸入信箱                                                     |
+|        `<input type="password">`        | 輸入密碼                                                     |
+|        `<input type="checkbox">`        | 多選框通常會設定id，搭配label的for指定選項                   |
+|         `<input type="radio"> `         | 單選框通常會設定id，搭配label的for指定選項                   |
+|         `<input type="reset">`          | 所有form裡面的input重設                                      |
+|          `<input type="tel"> `          | 填入電話                                                     |
+|          `<input type="url"> `          | 傳網址                                                       |
+|         `<input type="button"> `        | 普通按鍵                                                     |
 |                                       |                                                              |
 
 ## From Attributes
