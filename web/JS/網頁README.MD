@@ -1,12 +1,30 @@
-前端使用fetch做網站前後端的資料傳輸，利用onclick 觸發函數，使用querySelector取得資料內容，再用fetch把內容回傳到後端(server.js)，進行資料庫的添加，前端部分比重偏重
+## 網頁遊戲筆記
+
+>[**Phaser Game**](https://github.com/stereomp3/note/tree/main/web/Phaser)
 
 
 
-網頁有些內容使用iframe，把內容放如github裡面，在使用iframe把他們叫入主網頁中
+>[Unity Game](https://github.com/stereomp3/note/tree/main/unity)
 
 
 
-網頁login是使用fetch判斷，利用data判斷後端的ctx.response.body傳回的內容(會在/user顯示用戶名)，再決定要跳到哪個頁面(如果登入成功會拿到flag，再用flag去開登入功能)
+## 網站概述
+
+> 本網站使用Web2.0架構
+
+* 前端使用fetch做網站前後端的資料傳輸，利用onclick 觸發函數，使用querySelector取得資料內容，再用fetch把內容回傳到後端(server.js)，進行資料庫的添加，前端部分比重偏重
+
+
+
+> 主網站內嵌次網站(放在github)
+
+* 網頁有些內容使用iframe，把內容放如github裡面，在使用iframe把他們叫入主網頁中
+
+
+
+> 網站登入判定
+
+* 網頁login是使用fetch判斷，利用data判斷後端的ctx.response.body傳回的內容(會在/user顯示用戶名)，再決定要跳到哪個頁面(如果登入成功會拿到flag，再用flag去開登入功能)
 
 ```JS
 let r = window.fetch('/login', {
@@ -25,7 +43,14 @@ let r = window.fetch('/login', {
 
 
 
-登入授權: 發文
+> 登入可以做的事情(會慢慢加):
+
+   1.  發文 (Web1.0)
+   2.  ......
+
+
+
+
 
 > 檢查格式參考網頁: https://jadoggy.pixnet.net/blog/post/10638134
 
