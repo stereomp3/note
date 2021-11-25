@@ -45,3 +45,6 @@ test.var  //直接呼叫不用加() // get用在資料辨別，讓資料可以�
 
 [puppeteer](https://gitlab.com/ccc110/sa/-/tree/master/se/08-verify/02-ajax/02-blogAjax)
 
+
+### [BACK](../)
+
