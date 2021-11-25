@@ -10,14 +10,16 @@ post
 
 ### 樣板字符串 (通常是用` HTML `)
 
-    字符串裡面可以傳參，使用:
-     --> "/book/:id"  --> id是參數
-    
-    for (let i=1; i<=9; i++)
-    	let row = `<tr><th>${i}</th>`
-    	for (let j=1; j<=9; j++) {
-     	    row += `<td>${i+j}</td>` // 裡面可以加上變數利用${variable}
-    	}
+```js
+字符串裡面可以傳參，使用:
+ --> "/book/:id"  --> id是參數
+
+for (let i=1; i<=9; i++)
+	let row = `<tr><th>${i}</th>`
+	for (let j=1; j<=9; j++) {
+ 	    row += `<td>${i+j}</td>` // 裡面可以加上變數利用${variable}
+	}
+```
 
 * **如果有寫JS檔(輸出型式)要轉成HTML 可以用 deno run ???.js > ???.html**
 

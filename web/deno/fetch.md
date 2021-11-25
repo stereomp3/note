@@ -10,7 +10,7 @@
 >
 > **注意!!，使用fetch要利用onclick觸發函式，所以form的最後不是用 `type = "submit`, 而是`type="button"`**
 
-```JS
+```js
 var R = {}
 
 // 這邊的東西都是前端的
@@ -22,8 +22,10 @@ window.onhashchange = async function () {
   console.log('tokens=', tokens)
   switch (tokens[0]) {
     case '#show':
+      // 這裡使用fetch的get，先到/post/:id呼叫後端的show，show把文字檔丟到網站上後
+      // 再用r.json把字串轉json，最後放到show(post)裡面呈現
       r = await window.fetch('/post/' + tokens[1])       
-      let post = await r.json()  // 把字串轉成json
+      let post = await r.json()  
       R.show(post)
       break
     case '#new':
@@ -112,6 +114,48 @@ R.savePost = async function () {
 
 
 
+> fetch可以取得當前狀態，由server回傳，200是成功，其他的則會報錯
+
+```js
+let r = await window.fetch('/login', {
+        // 把json物件轉成字串
+        body: JSON.stringify({username: username, password: password}),
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        }
+    })
+    console.log("r.status = " + r.status)  // 200 成功
+	// 對應到後端的ctx.response.status
+```
+
+
+
+
+
+> fetch可以取得get的內容，利用then把他的promise物件轉成文字:
+
+```js
+let r = window.fetch('/login', {
+    // 把json物件轉成字串
+        body: JSON.stringify({username: username, password: password}),
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        }
+    })
+
+  r.test().then(function(data) {
+    console.log(data); // this will be a string --> 對應到後端的ctx.response.body 
+  });
+```
+
+
+
+
+
+
+
 
 
 
@@ -119,3 +163,4 @@ R.savePost = async function () {
 
 
 > 前端console.log在網頁看，後端console.log在terminal裡面看
+

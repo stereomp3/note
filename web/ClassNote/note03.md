@@ -15,7 +15,7 @@
 
 * 鍊式語法: router.get().get().get() = router.get()， 現在很多語言都支援
 				      
-	```
+	```js
 	*  router.get()
 	  			       router.get()
 	

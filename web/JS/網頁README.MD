@@ -6,5 +6,26 @@
 
 
 
+網頁login是使用fetch判斷，利用data判斷後端的ctx.response.body傳回的內容，再決定要跳到哪個頁面(如果登入成功會拿到flag(在後端)，再用flag去開登入功能)
+
+```JS
+let r = window.fetch('/login', {
+    // 把json物件轉成字串
+        body: JSON.stringify({username: username, password: password}),
+        method: 'POST',
+        headers: {
+        'Content-Type': 'application/json'
+        }
+    })
+
+  r.test().then(function(data) {
+    console.log(data); // this will be a string --> 對應到後端的ctx.response.body 
+  });
+```
+
+
+
+
+
 
 

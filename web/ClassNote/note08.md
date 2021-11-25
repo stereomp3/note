@@ -26,7 +26,7 @@
 
 > 使用爬蟲抓網址
 
-```JS
+```js
 // 可以在終端輸入，用網址去抓
 let url = Deno.args[0]
 console.log('fetch page at : ', url)
@@ -42,7 +42,7 @@ console.log(data)
 
 > 爬蟲範例，會一直抓，只要有連到超連結就會把資料丟到data裡面，不過這個只偵測絕對路徑
 
-```JS
+```js
 
 async function getPage(url) {
   const res = await fetch(url);
@@ -93,7 +93,7 @@ await craw(urlList)
 
 > 抓相對路徑，原理是用兩個路徑，把他們合成
 
-```JS
+```js
 var urlList = [
   // 'http://msn.com', 
   'https://en.wikipedia.org/'

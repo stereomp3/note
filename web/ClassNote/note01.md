@@ -5,7 +5,7 @@
 * bash 使用linux指令
   
 ### windows shell 是 windows指令，使用bash比較好，未來會比較常用
-  
+
 ```
 11-crawler(爬蟲)
 curl 使用方法 : http://www.ruanyifeng.com/blog/2019/09/curl-reference.html
@@ -13,7 +13,7 @@ curl 使用方法 : http://www.ruanyifeng.com/blog/2019/09/curl-reference.html
 
 * 打完程式碼可以加上js讓文字有顏色
   
-```
+```js
 """js
 	JS程式
 """
@@ -59,5 +59,4 @@ Q:
 myoak.js --- 為甚麼要設置request和header? 
          --- 為甚麼只能塞一個function到列表就要break，塞兩個會如何??
 ```
-
 

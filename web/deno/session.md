@@ -8,7 +8,7 @@
 
 > 使用router時，注意，如果觸發的函式有用到session，就要加 `session.initMiddleware()`
 
-```JS
+```js
 import { Router } from "https://deno.land/x/oak/mod.ts";
 import { Session } from "https://deno.land/x/oak_sessions/mod.ts";
 
@@ -24,7 +24,7 @@ router.get('/', session.initMiddleware(),list) // list函式裡有用到session�
 
 > 使用session常用功能，get和set，可以讓不同電腦存取不同的使用者
 
-```JS
+```js
 async function login(ctx){
     // 設置數據(登入綁定使用著)
     ctx.state.session.set('user', user)

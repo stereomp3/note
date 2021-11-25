@@ -2,7 +2,7 @@
 
 > google地圖就是用ajax(比較老)、websocket(新技術，比較快)去抓，不會一次抓下來，是根據使用者需求去抓
 
-```JS
+```js
 while (true) {
 
  // deno 只要有輸出入就要有輸出入，這邊會報錯是因為這邊是deno語法，用的是JS，JS await只能寫在module裡面
@@ -20,7 +20,7 @@ while (true) {
 >
 > 基礎寫法如下
 
-```JS
+```js
 import { WebSocket, WebSocketServer } from "https://deno.land/x/websocket@v0.0.5/mod.ts";
 
 // 建立伺服端，WebSocket是專門針對伺服端跟客戶端的連接
@@ -39,7 +39,7 @@ wss.on("connection", function (ws: WebSocket) {
 
 > webSocket是用另外一個port進行網路通訊的，所以client要通訊，要連到webSocket開的port
 
-```JS
+```js
 import { Application, send } from "https://deno.land/x/oak/mod.ts";
 import { WebSocketClient, WebSocketServer } from "https://deno.land/x/websocket/mod.ts";
 

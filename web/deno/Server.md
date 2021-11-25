@@ -18,7 +18,7 @@
 
    > 以下是server範例
 
-```JS
+```js
 import { Application, Router, send } from "https://deno.land/x/oak/mod.ts";
 
 const router = new Router(); 
@@ -57,3 +57,4 @@ await app.listen({ port: 6020 });
 
 
 
+> **!!改了後端的東西就要重啟伺服器才可以運行!!**

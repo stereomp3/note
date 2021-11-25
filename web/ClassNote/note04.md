@@ -24,7 +24,7 @@
 
 * 寫middleware 必須用 async await 很像 yeild next (generater)，
 
-```
+```js
 a(function(){
     b(function(){
 	c(function(){
@@ -36,7 +36,7 @@ a(function(){
 
 可以改成 :
 
-```
+```js
 let r = await a
 r = await b
 r = await c
@@ -45,21 +45,25 @@ r = await c
 取得資料用await
 
 # request, respond?
-    request: 傳回使用者
-    ctx.request.url.pathname --> 取路徑
-    ctx.request.body().value --> 取出裡面有name的東東和內容組成類似字典的東東
-    				通常要再用一個字典取出
-        --->
-    	const post = {}
-          	for (const [key, value] of pairs) {
-        	    post[key] = value
-      		}	
+```js
+request: 傳回使用者
+ctx.request.url.pathname --> 取路徑
+ctx.request.body().value --> 取出裡面有name的東東和內容組成類似字典的東東
+				通常要再用一個字典取出
+    --->
+	const post = {}
+      	for (const [key, value] of pairs) {
+    	    post[key] = value
+  		}	
+```
 
 
-    respond: 傳到伺服器
-    ctx.body = `` --> 把`html`放到網站裡
-    ctx.respond.body = ` `  -->
-    ctx.respond.redirect("/") --> 把目錄切到("/") 
+```js
+respond: 傳到伺服器
+ctx.body = `` --> 把`html`放到網站裡
+ctx.respond.body = ` `  -->
+ctx.respond.redirect("/") --> 把目錄切到("/") 
+```
 
 * **app(router.router())讓 router裡面的.get會根據網址作動作**
 

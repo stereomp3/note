@@ -17,7 +17,7 @@
 
 > 不同瀏覽器有不同的session，可以讓不同用戶使用
 
-```
+```js
 ctx.state.session.set('user', user)  // 設定資料傳給session
 await ctx.state.session.get('user')  // 從伺服器上取資料需要 await
 ```
