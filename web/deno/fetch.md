@@ -146,7 +146,12 @@ let r = window.fetch('/login', {
     })
 
   r.test().then(function(data) {
-    console.log(data); // this will be a string --> 對應到後端的ctx.response.body 
+        console.log(data); // this will be a string --> 對應到後端的ctx.response.body 
+        if(data=="success") {
+            window.location.hash = '#loginSuccess' // 切換到成功頁面
+            sideNav.login()
+        }
+        else window.location.hash = '#loginFail'
   });
 ```
 
