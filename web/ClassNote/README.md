@@ -13,4 +13,5 @@ note07 | [web2.0介紹，fetch概念](./note07.md)  -->  [fetch額外整理](../
 note08 | [介紹爬蟲](./note08.md) 
 note09 | [介紹webSocket](./note09.md) 
 note10 | [虛擬貨幣、區塊鍊基礎](./note10.md) 
+note11 | [介紹PostgreSQL用法，資料庫語法](./note11.md) 
 

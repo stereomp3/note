@@ -60,7 +60,8 @@ git checkout 有錯的資料夾
 > 刪除文件
 
 ```
-rm 資料夾
+rm 刪除文件
+rm -r 刪除資料夾
 ```
 
 
@@ -75,5 +76,28 @@ rm 資料夾
 8000 放行事曆
 8666 放主網頁
 6020 放phaser Game
+5432 postgreSQL預設port
+
+
+```
+
+
+
+## server安裝PostgreSQL
+
+> https://blog.gtwang.org/linux/centos-linux-install-postgresql-database-tutorial/
+
+```
+# 安裝 PostgreSQL 伺服器
+sudo yum install postgresql-server postgresql-contrib
+
+# 初始化 PostgreSQL 資料庫
+sudo postgresql-setup initdb
+
+# 啟動 PostgreSQL 伺服器
+sudo systemctl start postgresql
+
+# 設定開機自動啟動 PostgreSQL 伺服器
+sudo systemctl enable postgresql
 ```
 

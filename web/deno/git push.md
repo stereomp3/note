@@ -53,6 +53,21 @@ git push -u origin main
 
 
 
+## 在主分支下面創建新分支
+
+> 這個作筆記很好用
+
+```
+git remote -v  // 查看連到的遠端
+git checkout -b mynote  // 新增子分支
+git add -A   // 添加資料到分支(現在在mynote分支)
+git commit -m "mynote init"   // 把資料發布上去
+git branch    // 查看分支
+git checkout master  // 切換到主分支(不可改的)
+git pull origin master
+git checkout mynote  // 切換到mynote分支(可改)
+```
+
 
 
 ## warning: LF will be replaced by CRLF 
