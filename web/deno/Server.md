@@ -2,7 +2,7 @@
 
 > 指導老師: [[**陳鍾誠**](https://www.facebook.com/ccckmit?__cft__[0]=AZVethTz5Hu1AEYrrvQU5sZznAuGm23KAa9UsX-All2jFE_drFygSWwPVyz0N_wm0--tN5ue2-EaLQ5PoQ5Y8aKZ8Z5cVtZI4xPu-WBwXOPICbEqcPzVoBTec5aiX6I0WTE&__tn__=-UC%2CP-R)]
 >
-> [[網站]((https://gitlab.com/ccc110/ws))
+> [網站]((https://gitlab.com/ccc110/ws))
 
 1. 先import deno 的oak套件
 

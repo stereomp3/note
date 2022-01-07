@@ -14,4 +14,8 @@ note08 | [介紹爬蟲](./note08.md)
 note09 | [介紹webSocket](./note09.md) 
 note10 | [虛擬貨幣、區塊鍊基礎](./note10.md) 
 note11 | [介紹PostgreSQL用法，資料庫語法](./note11.md) 
+note12 | [HTTP轉HTTPS作法、deno指令、build-in tool](./note12.md) 
+note13 | [網站稱流量、密碼加鹽](./note13.md) 
+note14 | [加密解密，和實際程式碼](./note14.md) 
+note15 | [區塊練 pub/sub ](./note15.md) 
 

@@ -18,6 +18,13 @@
 		submit會丟出name的值當作鍵(key)，內容當作值(value)，可以用
 		const 變數 = await body.value`接收						-->
     <p><input type="submit" value="Create"></p>
+    <!--選項選擇-->
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="opel">Opel</option>
+        <option value="audi">Audi</option>
+  </select>
 </form>
 
 ```

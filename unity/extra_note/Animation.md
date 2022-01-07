@@ -94,6 +94,7 @@ public class playercontroller : MonoBehaviour
 * 在關鍵點上面增加事件(長方形)，並設置set...
 * 之後就可以看到物件改變了!!
 * 也可以對物件屬性作改變，然後加上關鍵禎
+* 動畫要在那一個地方選擇左上的錄製按鈕!!!
 
 
 

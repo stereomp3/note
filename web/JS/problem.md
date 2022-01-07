@@ -13,3 +13,7 @@ default:
 
 
 > fetch可以get到後端的資料嗎? ( 像是取得資料庫內容 ... )
+
+
+
+> fetch別的port出現   blocked by CORS policy，要如何加入header  Access-Control-Allow-Origin *

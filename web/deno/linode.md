@@ -77,7 +77,8 @@ rm -r 刪除資料夾
 8666 放主網頁
 6020 放phaser Game
 5432 postgreSQL預設port
-
+8881 放文字遊戲
+8080 放文字遊戲的websocket
 
 ```
 
@@ -101,3 +102,6 @@ sudo systemctl start postgresql
 sudo systemctl enable postgresql
 ```
 
+
+
+建創資料夾: mkdir [資料夾名稱]

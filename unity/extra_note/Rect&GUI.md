@@ -1,3 +1,5 @@
+> 現在都用canvas、UI 了，比較少用這個
+
 # Rect(*rectangle*)
 
 * 定義: 由 X 和 Y 位置、寬度和高度定義的 2D 矩形。

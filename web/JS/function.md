@@ -90,5 +90,17 @@ window.history.forward()　//前往下一頁
 
 
 
+> Random
 
+```js
+Math.floor(Math.random() * max) // 介於 0~max之間，如果沒*max就是介於0~1之間
+```
+
+
+
+> 小數處理
+
+```js
+float.toFixed(2) // 取到小數後兩位
+```
 
