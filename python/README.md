@@ -1,1 +1,1 @@
-## [一系列課程由幕內達提供](https://tts.tmooc.cn/studentCenter/toMyttsPage)
+python 筆記在 private note 裡面 is not public !
