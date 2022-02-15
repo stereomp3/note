@@ -129,7 +129,7 @@
 
 
 
-#### fragmentation & Ressemably(分割與重組)
+#### fragmentation & Reassembly(分割與重組)
 
 
 > * ID(Identifiaction; 16bit): 識別代碼
@@ -167,7 +167,7 @@
 
 
 
-####  HC(Header Checcksum; 16bit): 檢查標頭碼
+####  HC(Header Checksum; 16bit): 檢查標頭碼
 
 > 用來保護標頭
 
