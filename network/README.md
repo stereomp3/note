@@ -1,5 +1,5 @@
 # 109-Introduction-and-Practice-of-Internet
-| 欄位       |:                             內容                             |:
+| 欄位       |                            內容                             |
 | ---------- | ---------------------------------------------------------- |
 | 學期       |                        109 ~ 110學年                         |
 | 學生       | [魏仲彥](https://stereomp3.github.io/wp109b/homework/MyWeb6.0/MyWeb.html) |
@@ -48,6 +48,6 @@
 
 | NOTE                         | CONTENT                                                      |
 | :--------------------------- | :----------------------------------------------------------- |
-| [Layer2](protocol/Layer2.md) | [IP封包介紹](protocol/Layer2.md#IP封包)<br /><ul> <li><a src="protocol/Layer2.md#DS(Differentiated Service; 差異服務)">DS</a></li> <li><a src="protocol/Layer2.md#TL(total Length; 16bit): 封包總長度">TL</a></li><li><a src="protocol/Layer2.md#fragmentation & Ressemably(分割與重組)">fragmentation & Reassembly</a></li><li><a src="protocol/Layer2.md#TTL(Time to Live; 8bit): 存活時間 Hop count">TTL</a></li><li><a src="protocol/Layer2.md#PROT(Protocol; 8bit): 網路協定">PROT</a></li><li><a src="protocol/Layer2.md#DS(Differentiated Service; 差異服務)">DS</a>[HC](protocol/Layer2.md#HC(Header Checcksum; 16bit): 檢查標頭碼)</li><li></li><li><a src="protocol/Layer2.md#DS(Differentiated Service; 差異服務)">DS</a>[SA](protocol/Layer2.md#SA(Source IP Address; 32bit): 來源端IP位置)</li><li><a src="protocol/Layer2.md#DA(Destination IP Address; 32 bit): 目的端位置">DA</a></li><li><a src="protocol/Layer2.md#OPT(Option; 長度不定): 選擇項">OPT</a></li></ul> |
+| [Layer2](protocol/Layer2.md) | [IP封包介紹](protocol/Layer2.md#IP封包)<br /><ul> <li><a src="./protocol/Layer2.md#DS(Differentiated Service; 差異服務)">DS</a></li> <li><a src="protocol/Layer2.md#TL(total Length; 16bit): 封包總長度">TL</a></li><li><a src="protocol/Layer2.md#fragmentation & Ressemably(分割與重組)">fragmentation & Reassembly</a></li><li><a src="protocol/Layer2.md#TTL(Time to Live; 8bit): 存活時間 Hop count">TTL</a></li><li><a src="protocol/Layer2.md#PROT(Protocol; 8bit): 網路協定">PROT</a></li><li><a src="protocol/Layer2.md#DS(Differentiated Service; 差異服務)">DS</a>[HC](protocol/Layer2.md#HC(Header Checcksum; 16bit): 檢查標頭碼)</li><li></li><li><a src="protocol/Layer2.md#DS(Differentiated Service; 差異服務)">DS</a>[SA](protocol/Layer2.md#SA(Source IP Address; 32bit): 來源端IP位置)</li><li><a src="protocol/Layer2.md#DA(Destination IP Address; 32 bit): 目的端位置">DA</a></li><li><a src="protocol/Layer2.md#OPT(Option; 長度不定): 選擇項">OPT</a></li></ul> |
 | [Layer3](protocol/Layer3.md) | * 1 <br />* 2<br />* 3<br />                                 |
 
