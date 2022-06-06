@@ -36,6 +36,14 @@
   > VALUES (可以填值, 也可以不填值, ?,...); /*填值(?)的話後面要補變量(,var1,var2)*/
   > ```
 
+  > UPDATE
+  >
+  > ```sqlite
+  > UPDATE 創建資料名
+  > SET 欄位1 = 值, 欄位2 = 值...
+  > WHERE 符合的資料
+  > ```
+  
   >DELETE
   >
   >```sqlite
