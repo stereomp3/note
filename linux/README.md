@@ -12,7 +12,7 @@
 
 |             week              | content                                                      | date       |
 | :---------------------------: | :----------------------------------------------------------- | ---------- |
-| [week01](110semester02/01.md) | [Centos7環境設定](110semester02/01.md#Centos7環境設定)<br /><ul><li>[使用Centos的好處](110semester02/01.md#使用Centos的好處)<li/><li> [virtulBox安裝教學](110semester02/01.md#virtulBox安裝教學)<li/><ul/> | 2022/02/15 |
+| [week01](110semester02/01.md) | [Centos7環境設定](110semester02/01.md#Centos7環境設定)<br /><li>[使用Centos的好處](110semester02/01.md#使用Centos的好處)<li> [virtulBox安裝教學](110semester02/01.md#virtulBox安裝教學) | 2022/02/15 |
 | [week02](110semester02/02.md) | [Network](110semester02/02.md#Network)<br />[Linux指令](110semester02/02.md#Linux指令)<br />[遠端操作](110semester02/02.md#遠端操作)<br />[export env](110semester02/02.md#export env) | 2022/02/22 |
 | [week03](110semester02/03.md) | [架設簡單伺服器](110semester02/03.md#架設簡單伺服器)<br />[Linux指令](110semester02/03.md#Linux指令) | 2022/03/01 |
 | [week04](110semester02/04.md) | [Linux 發行版本](110semester02/04.md#Linux 發行版本)<br />[shell programming](110semester02/04.md#shell programming)<br />[Linux 指令](110semester02/04.md#Linux 指令)<br />[重制root密碼](110semester02/04.md#重制root密碼) | 2022/03/08 |
