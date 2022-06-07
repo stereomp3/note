@@ -25,10 +25,10 @@
 | [week11](110semester02/11.md) | [專有名詞介紹](110semester02/11.md#專有名詞介紹)<br />[Linux指令](110semester02/11.md#Linux指令) | 2022/04/26 |
 | [week12](110semester02/12.md) | [命令管道](110semester02/12.md#命令管道)<br />[撰寫系統腳本](110semester02/12.md#撰寫系統腳本)<br />[搜尋檔案(find)](110semester02/12.md#搜尋檔案(find))<br />[增量備份](110semester02/12.md#增量備份)<br />[Linux指令](110semester02/12.md#Linux指令) | 2022/05/03 |
 | [week13](110semester02/13.md) | [grep](110semester02/13.md#grep)<br /><ul><li>[grep參數](110semester02/13.md#grep參數)</li><li>[正規表達式規則</li>](110semester02/13.md#正規表達式規則)<li>[Linux指令](110semester02/13.md#Linux指令)</li></ul><br />[vim](110semester02/13.md#vim)<ul><li>[Vi 底行命令](110semester02/13.md#Vi-底行命令)</li></ul><br />[硬體設備](110semester02/13.md#硬體設備)<ul><li>[mount](110semester02/13.md#mount)</li><li>[Linux指令](110semester02/13.md#Linux指令)</li></ul> | 2022/05/10 |
-| [week14](110semester02/14.md) | [掛載格式硬碟](110semester02/14.md#掛載格式硬碟)<br />[掛載磁碟](110semester02/14.md#掛載磁碟)<br />[群組](110semester02/14.md#群組)<br />[Shell](110semester02/14.md#Shell)<br />[Linux 指令](110semester02/14.md#Linux 指令) | 2022/05/17 |
-| [week15](110semester02/15.md) | [使用者權限](110semester02/15.md#使用者權限)<br />[crach](110semester02/15.md#crach)<br />[Linux指令](110semester02/15.md#Linux指令)<br />[Group sorted(undo)](110semester02/15.md#Group sorted(undo)) | 2022/05/24 |
-| [week16](110semester02/16.md) | [process](110semester02/16.md#process)<br />[driver](110semester02/16.md#driver)<br />[Linux 指令](110semester02/16.md#Linux 指令) | 2022/05/31 |
-| [week17](110semester02/17.md) | [內部指令與外部指令](110semester02/17.md#內部指令與外部指令)<br />[Linux特殊符號](110semester02/17.md#Linux特殊符號)<br />[zombie process](110semester02/17.md#zombie process)<br />[orphan process](110semester02/17.md#orphan process)<br />[firework](110semester02/17.md#firework)<br />[Linux指令](110semester02/17.md#Linux指令) | 2022/06/07 |
+| [week14](110semester02/14.md) | [掛載格式硬碟](110semester02/14.md#掛載格式硬碟)<br />[掛載磁碟](110semester02/14.md#掛載磁碟)<br />[群組](110semester02/14.md#群組)<br />[Shell](110semester02/14.md#Shell)<br />[Linux指令](110semester02/14.md#Linux指令) | 2022/05/17 |
+| [week15](110semester02/15.md) | [使用者權限](110semester02/15.md#使用者權限)<br />[crach](110semester02/15.md#crach)<br />[Linux指令](110semester02/15.md#Linux指令)<br />[Group sorted(undo)](110semester02/15.md#Group-sorted(undo)) | 2022/05/24 |
+| [week16](110semester02/16.md) | [process](110semester02/16.md#process)<br />[driver](110semester02/16.md#driver)<br />[Linux指令](110semester02/16.md#Linux指令) | 2022/05/31 |
+| [week17](110semester02/17.md) | [內部指令與外部指令](110semester02/17.md#內部指令與外部指令)<br />[Linux特殊符號](110semester02/17.md#Linux特殊符號)<br />[zombie process](110semester02/17.md#zombie-process)<br />[orphan process](110semester02/17.md#orphan-process)<br />[firework](110semester02/17.md#firework)<br />[Linux指令](110semester02/17.md#Linux指令) | 2022/06/07 |
 |            week18             | none                                                         | 2022/06/14 |
 
 
