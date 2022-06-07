@@ -18,7 +18,7 @@
 | [week04](110semester02/04.md) | [Linux 發行版本](110semester02/04.md#Linux-發行版本)<br />[shell programming](110semester02/04.md#shell-programming)<br />[Linux 指令](110semester02/04.md#Linux-指令)<br />[重制root密碼](110semester02/04.md#重制root密碼) | 2022/03/08 |
 | [week05](110semester02/05.md) | [file system](110semester02/05.md#file-system)<br /><ul><li>[磁碟分割(hard disk partition)](110semester02/05.md#磁碟分割(hard-disk-partition))</li><li>[Linux系統載入](110semester02/05.md#Linux系統載入)[Linux指令](110semester02/05.md#Linux指令)</li></ul> | 2022/03/15 |
 | [week06](110semester02/06.md) | [Linux指令格式](110semester02/06.md#Linux指令格式)<br />[Linux檔案](110semester02/06.md#Linux檔案)<br />[使用遠端破解密碼](110semester02/06.md#使用遠端破解密碼)<br />[Linux指令](110semester02/06.md#Linux指令) | 2022/03/22 |
-| [week07](110semester02/07.md) | [etc file後面要再加東西](110semester02/07.md#etc file後面要再加東西)<br />[Command](110semester02/07.md#Command)<br /><ul><li>[ls</li>](110semester02/07.md#ls)<li>[man](110semester02/07.md#man)</li><li>[tree](110semester02/07.md#tree)</li></ul> | 2022/03/29 |
+| [week07](110semester02/07.md) | [etc file後面要再加東西](110semester02/07.md#etc-file後面要再加東西)<br />[Command](110semester02/07.md#Command)<br /><ul><li>[ls</li>](110semester02/07.md#ls)<li>[man](110semester02/07.md#man)</li><li>[tree](110semester02/07.md#tree)</li></ul> | 2022/03/29 |
 |            week08             | 放假!                                                        | 2022/04/05 |
 | [week09](110semester02/09.md) | [切換kernal使用特定版本的功能](110semester02/09.md#切換kernal使用特定版本的功能)<br />[提權](110semester02/09.md#提權)<br />[Linux指令](110semester02/09.md#Linux指令) | 2022/04/12 |
 |            week10             | 期中考!                                                      | 2022/04/19 |
