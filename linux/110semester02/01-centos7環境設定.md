@@ -1,8 +1,8 @@
 這學期主要使用的 軟體: `virtualbox + centos 7`
 
+# Centos7環境設定
 
-
-#### 使用Centos的好處
+## 使用Centos的好處
 
 * centos 對於伺服器的架設很穩定，維護一次可以稱比較久，而且有long term support
 
@@ -12,7 +12,7 @@
 
 
 
-#### virtulBox安裝教學
+## virtulBox安裝教學
 
 * 下載virtulBox: https://www.virtualbox.org/wiki/Downloads
 
@@ -31,7 +31,7 @@
 
 
 
-#### centos7 設定教學
+## centos7 設定教學
 
 > 可以參考: [CentOS 7 的 Linux 系統安裝步驟教學 - G. T. Wang (gtwang.org)](https://blog.gtwang.org/linux/centos-7-installation-tutorial/)
 

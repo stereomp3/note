@@ -2,7 +2,7 @@
 
 Linux可以架設伺服器、營運工程也可以使用樹莓派，裡面有很多API，需要再去了解，可以使用man指令去查看參數如何使用(`man 2 open`)
 
-#### 切換kernal使用特定版本的功能
+## 切換kernal使用特定版本的功能
 
 > [linux kernel官網](https://kernel.org/)，[RHEL/CentOS7編譯核心](https://www.ltsplus.com/linux/rhel-centos-7-compile-kernel)
 
@@ -84,7 +84,7 @@ grub2-mkconfig -o /boot/efi/EFI/centos/grub.cfg
 
 
 
-#### 提權
+## 提權
 
 有一些kernel會有嚴重的版本漏洞(像是一般使用者可以提權到超級使用者)
 
@@ -123,7 +123,7 @@ CentOS 7 使用的是最新的XFS系統，在大型檔案傳輸有優勢
 
 
 
-#### Linux指令
+## Linux指令
 
 * `uname -r`: 查看目前使用kernal version
 * `wget url`: 直接從網路上下載檔案
