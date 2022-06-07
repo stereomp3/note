@@ -13,10 +13,10 @@
 |             week              | content                                                      | date       |
 | :---------------------------: | :----------------------------------------------------------- | ---------- |
 | [week01](110semester02/01.md) | [Centos7環境設定](110semester02/01.md#Centos7環境設定)<br /><li>[使用Centos的好處](110semester02/01.md#使用Centos的好處)<li> [virtulBox安裝教學](110semester02/01.md#virtulBox安裝教學) | 2022/02/15 |
-| [week02](110semester02/02.md) | [Network](110semester02/02.md#Network)<br />[Linux指令](110semester02/02.md#Linux指令)<br />[遠端操作](110semester02/02.md#遠端操作)<br />[export env](110semester02/02.md#export env) | 2022/02/22 |
+| [week02](110semester02/02.md) | [Network](110semester02/02.md#Network)<br />[Linux指令](110semester02/02.md#Linux指令)<br />[遠端操作](110semester02/02.md#遠端操作)<br />[export env](110semester02/02.md#export-env) | 2022/02/22 |
 | [week03](110semester02/03.md) | [架設簡單伺服器](110semester02/03.md#架設簡單伺服器)<br />[Linux指令](110semester02/03.md#Linux指令) | 2022/03/01 |
-| [week04](110semester02/04.md) | [Linux 發行版本](110semester02/04.md#Linux 發行版本)<br />[shell programming](110semester02/04.md#shell programming)<br />[Linux 指令](110semester02/04.md#Linux 指令)<br />[重制root密碼](110semester02/04.md#重制root密碼) | 2022/03/08 |
-| [week05](110semester02/05.md) | [file system](110semester02/05.md#file system)<br /><ul><li>* [磁碟分割(hard disk partition)](110semester02/05.md#磁碟分割(hard disk partition))<br />* [Linux系統載入](110semester02/05.md#Linux系統載入)<br />[Linux 指令](110semester02/05.md) | 2022/03/15 |
+| [week04](110semester02/04.md) | [Linux 發行版本](110semester02/04.md#Linux-發行版本)<br />[shell programming](110semester02/04.md#shell-programming)<br />[Linux 指令](110semester02/04.md#Linux-指令)<br />[重制root密碼](110semester02/04.md#重制root密碼) | 2022/03/08 |
+| [week05](110semester02/05.md) | [file system](110semester02/05.md#file-system)<br /><ul><li>* [磁碟分割(hard disk partition)](110semester02/05.md#磁碟分割(hard-disk-partition))<br />* [Linux系統載入](110semester02/05.md#Linux系統載入)<br />[Linux指令](110semester02/05.md#Linux指令) | 2022/03/15 |
 | [week06](110semester02/06.md) | [Linux指令格式](110semester02/06.md#Linux指令格式)<br />[Linux檔案](110semester02/06.md#Linux檔案)<br />[使用遠端破解密碼](110semester02/06.md#使用遠端破解密碼)<br />[Linux指令](110semester02/06.md#Linux指令) | 2022/03/22 |
 | [week07](110semester02/07.md) | [etc file後面要再加東西](110semester02/07.md#etc file後面要再加東西)<br />[Command](110semester02/07.md#Command)<br /><ul><li>* [ls](110semester02/07.md#ls)<br />* [man](110semester02/07.md#man)<br />* [tree](110semester02/07.md#tree) | 2022/03/29 |
 |            week08             | 放假!                                                        | 2022/04/05 |
