@@ -43,5 +43,5 @@
 | [gif crack](Bonus/gif_crack)               | 抓出gif文件的文字                                            |
 | [zip crack](Bonus/zip_crack)               | 破解zip壓縮檔案的密碼                                        |
 | [group](Bonus/Group.md)                    | 課本第七章習題，裡面一共三題                                 |
-| [other note](Bonus/hacker.md)              | [暴力破解](Bonus/hacker.md#暴力破解)<br />[hydra](Bonus/hacker.md#hydra)<br />[Medusa](Bonus/hacker.md#Medusa)<br />[John the Ripper(JTR)](Bonus/hacker.md#John the Ripper(JTR))<br />[使用遠端破解密碼](Bonus/hacker.md#使用遠端破解密碼)<br />[msfconsole](Bonus/hacker.md#msfconsole)<br />[關閉防火牆和保護裝置](Bonus/hacker.md#關閉防火牆和保護裝置)<br />[破解壓縮檔案密碼](Bonus/hacker.md#破解壓縮檔案密碼)<br />[查看圖片文字](Bonus/hacker.md#查看圖片文字)<br />[else](Bonus/hacker.md#else)<ul><li>重製、修改root 密碼</li><li>修改putty 裡面的vim註釋顏色</li><li>密碼破解法</li></ul> |
+| [other note](Bonus/hacker.md)              | [暴力破解](Bonus/hacker.md#暴力破解)<br />[hydra](Bonus/hacker.md#hydra)<br />[Medusa](Bonus/hacker.md#Medusa)<br />[John the Ripper(JTR)](Bonus/hacker.md#John-the-Ripper(JTR))<br />[使用遠端破解密碼](Bonus/hacker.md#使用遠端破解密碼)<br />[msfconsole](Bonus/hacker.md#msfconsole)<br />[關閉防火牆和保護裝置](Bonus/hacker.md#關閉防火牆和保護裝置)<br />[破解壓縮檔案密碼](Bonus/hacker.md#破解壓縮檔案密碼)<br />[查看圖片文字](Bonus/hacker.md#查看圖片文字)<br />[else](Bonus/hacker.md#else)<ul><li>重製、修改root 密碼</li><li>修改putty 裡面的vim註釋顏色</li><li>密碼破解法</li></ul> |
 
