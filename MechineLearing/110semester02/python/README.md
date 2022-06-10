@@ -29,8 +29,8 @@
 
 | title                            | content                                                      |
 | -------------------------------- | ------------------------------------------------------------ |
-| [**INTRODUCTION**](INTRODUCTION) | [Tuning Model](INTRODUCTION#Tuning-Model)<ul><li>[LabelEncoder](INTRODUCTION#LabelEncoder)</li><li> [Pipeline](INTRODUCTION#Pipeline)</li><li> [Cross Validation](INTRODUCTION#CrossValidation)</li></ul>[名詞介紹](INTRODUCTION#名詞介紹)<ul><li>[混淆矩陣](INTRODUCTION#混淆矩陣)</li><li> [Accuracy](INTRODUCTION#Accuracy)</li><li> [Precision](INTRODUCTION#Precision)</li><li>[Recall](INTRODUCTION#Recall)</li><li> [F1 score](INTRODUCTION#F1-score)</li><li> [Sensitivity (TPR)](INTRODUCTION#Sensitivity-(TPR))</li><li>[Specificity (FPR)](INTRODUCTION#Specificity-(FPR))</li><li> [ROC](INTRODUCTION#ROC)</li><li> [AUC](INTRODUCTION#AUC)</li></ul>參考網頁 |
-| [KNN](KNN)                       | 裡面有KNN的7個指標和3個指標圖示([Confuses Matrix](KNN#Confuses-Matrix)、[PR Curve](KNN#PR-Curve)、[ROC Curve](KNN#ROC-Curve)) |
-| [BernoulliNB](BernoulliNB)       | 裡面有KNN的7個指標和3個指標圖示([Confuses Matrix](BernoulliNB#Confuses-Matrix)、[PR Curve](BernoulliNB#PR-Curve)、[ROC Curve](BernoulliNB#ROC-Curve)) |
-| [Bagging](Bagging)               | 裡面有KNN的7個指標和3個指標圖示([Confuses Matrix](BernoulliNB#Confuses-Matrix)、[PR Curve](BernoulliNB#PR-Curve)、[ROC Curve](BernoulliNB#ROC-Curve)) |
+| [**INTRODUCTION**](INTRODUCTION) | [Tuning Model](INTRODUCTION#Tuning-Model)<ul><li>[LabelEncoder](INTRODUCTION#LabelEncoder)</li><li> [Pipeline](INTRODUCTION#Pipeline)</li><li> [Cross Validation](INTRODUCTION#Cross-Validation)</li></ul>[名詞介紹](INTRODUCTION#名詞介紹)<ul><li>[混淆矩陣](INTRODUCTION#混淆矩陣)</li><li> [Accuracy](INTRODUCTION#Accuracy)</li><li> [Precision](INTRODUCTION#Precision)</li><li>[Recall](INTRODUCTION#Recall)</li><li> [F1 score](INTRODUCTION#F1-score)</li><li> [Sensitivity (TPR)](INTRODUCTION#sensitivity-tpr)</li><li>[Specificity (FPR)](INTRODUCTION#specificity-fpr)</li><li> [ROC](INTRODUCTION#ROC)</li><li> [AUC](INTRODUCTION#AUC)</li></ul>參考網頁 |
+| [KNN](KNN)                       | 裡面有KNN的7個指標和3個指標圖示([Confuses Matrix](KNN#confuses-matrix)、[PR Curve](KNN#pr-curve)、[ROC Curve](KNN#roc-curve)) |
+| [BernoulliNB](BernoulliNB)       | 裡面有KNN的7個指標和3個指標圖示([Confuses Matrix](BernoulliNB#confuses-matrix)、[PR Curve](BernoulliNB#pr-curve)、[ROC Curve](BernoulliNB#roc-curve)) |
+| [Bagging](Bagging)               | 裡面有KNN的7個指標和3個指標圖示([Confuses Matrix](Bagging#confuses-matrix)、[PR Curve](Bagging#pr-curve)、[ROC Curve](Bagging#roc-curve)) |
 
