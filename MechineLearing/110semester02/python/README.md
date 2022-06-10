@@ -29,7 +29,7 @@
 
 | title                            | content                                                      |
 | -------------------------------- | ------------------------------------------------------------ |
-| [**INTRODUCTION**](INTRODUCTION) | [Tuning Model](INTRODUCTION#Tuning Model)<ul><li>[LabelEncoder](110semester02/01.md#使用Centos的好處)</li><li> [Pipeline](110semester02/01.md#virtulBox安裝教學)</li></ul> |
+| [**INTRODUCTION**](INTRODUCTION) | [Tuning Model](INTRODUCTION#Tuning-Model)<ul><li>[LabelEncoder](110semester02/01.md#使用Centos的好處)</li><li> [Pipeline](110semester02/01.md#virtulBox安裝教學)</li></ul> |
 | [KNN](KNN)                       |                                                              |
 | [BernoulliNB](BernoulliNB)       |                                                              |
 | [Bagging](Bagging)               |                                                              |
