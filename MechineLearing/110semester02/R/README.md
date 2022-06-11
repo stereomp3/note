@@ -10,7 +10,7 @@
 
 ## Answer 
 
-一共使用3種模型: treebag、svm、knn，詳細的R內容可以看: 
+一共使用3種模型: treebag、svm、knn，詳細的R內容可以看: [R-NoteBook](https://stereomp3.github.io/note/MechineLearing/110semester02/R/work.html)、[source code](https://github.com/stereomp3/note/blob/main/MechineLearing/110semester02/R/work.Rmd)
 
 | func    | Accuracy  | Kappa     | performance |
 | ------- | --------- | --------- | ----------- |
