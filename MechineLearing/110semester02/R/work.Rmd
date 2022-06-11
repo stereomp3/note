@@ -1,0 +1,123 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+# Import Library& Prepare Data
+
+```{r}
+if (!require(caret)) install.packages('caret')
+library(caret)
+```
+
+
+```{r}
+data <- read.table("../letterdata.csv", sep=",", header = TRUE)
+data
+```
+
+
+# Data Preparation and Preprocessing
+
+create training and test dataset
+```{r}
+set.seed(42)
+
+# Step 1: Get row numbers for the training data
+trainRowNumbers <- createDataPartition(data$letter, p=0.8, list=FALSE)
+
+# Step 2: Create the training  dataset
+trainData <- data[trainRowNumbers,]
+
+# Step 3: Create the test dataset
+testData <- data[-trainRowNumbers,]
+
+# Store X and Y for later use.
+x = trainData[, 2:17]
+y = trainData$letter  
+```
+
+
+
+Check if missing values are in the data
+
+```{r}
+anyNA(trainData)
+```
+
+
+
+# Training and tuning the model
+
+```{r}
+fitControl <- trainControl(method="cv", number = 10)
+metric <- "Accuracy"
+```
+
+first_model: treebag
+```{r}
+set.seed(42)
+model_treebag = train(letter ~ ., data = trainData, method='treebag', trControl = fitControl)
+model_treebag
+```
+
+second_model: svm
+```{r}
+set.seed(42)
+svm3 <- train(letter ~., data = trainData, method = "svmRadial", trControl = fitControl, metric=metric, tuneLength = 10)
+svm3
+```
+
+
+final model: knn
+```{r}
+# prepare parameters for data transform
+set.seed(42)
+datasetNoMissing <- data[complete.cases(data),]
+CX <- datasetNoMissing[,2:17]
+preprocessParams <- preProcess(CX, method=c("BoxCox"))
+CX <- predict(preprocessParams, CX)
+CX
+```
+
+```{r}
+# prepare the validation dataset
+set.seed(7)
+# remove missing values (not allowed in this implementation of knn)
+testData <- testData[complete.cases(testData),]
+# convert to numeric
+for(i in 2:17) {
+testData[,i] <- as.numeric(as.character(testData[,i]))
+}
+# transform the validation dataset
+testDataX <- predict(preprocessParams, testData[,2:17])
+
+```
+
+make predictions
+```{r}
+
+set.seed(7)
+predictions <- knn3Train(CX, testDataX, datasetNoMissing$letter, k=3, prob=FALSE)
+predictions <- as.factor(predictions)
+confusionMatrix(predictions, as.factor(testData$letter))
+
+```
+
+
+# compare
+
+| func    | Accuracy  | Kappa     | performance |
+| ------- | --------- | --------- | ----------- |
+| treebag | 0.9358616 | 0.933293  | normal      |
+| svm     | 0.9682127 | 0.9669398 | good        |
+| knn     | 0.984     | 0.9833    | bes         |
+
+
+
+
+
+
+
+
