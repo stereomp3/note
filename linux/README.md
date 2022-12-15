@@ -1,5 +1,7 @@
 * 110學年度下學期: [Linux作業系統實務](#Linux作業系統實務)、[Linux加分題筆記](#Linux加分題筆記)
 
+* 111學年度上學期: [伺服器架設](#伺服器架設)
+
   
 
 
@@ -30,6 +32,16 @@
 |   [week16](110semester02/16.md)   | [process](110semester02/16.md#process)<br />[driver](110semester02/16.md#driver)<br />[Linux指令](110semester02/16.md#Linux指令)<ul><li>查看行程樹、查看記憶體和行程資訊</li><li></li><li>ps指令詳細用法、nice</li><li>`kill; pkill; job; fg; bg; sleep; !!`</li></ul> | 2022/05/31 |
 |   [week17](110semester02/17.md)   | [內部指令與外部指令](110semester02/17.md#內部指令與外部指令)<br />[Linux特殊符號](110semester02/17.md#Linux特殊符號)<br />[zombie process](110semester02/17.md#zombie-process)<br />[orphan process](110semester02/17.md#orphan-process)<br />[firework](110semester02/17.md#firework)<br />[Linux指令](110semester02/17.md#Linux指令)<ul><li>`&&`  和 `||` 的應用</li><li></li><li>`set; env`</li><li>`su` vs `su-`</li></ul> | 2022/06/07 |
 |              week18               | none                                                         | 2022/06/14 |
+
+
+
+
+
+# 伺服器架設 
+
+使用 Centos 作業系統，和 Visual Box 虛擬機
+
+building...
 
 
 

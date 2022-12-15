@@ -1,3 +1,46 @@
+大致資料庫操作
+
+
+```js
+import { DB } from "https://deno.land/x/sqlite/mod.ts";
+
+const db = new DB("data.db"); // 創建資料庫
+
+// 拿取資料庫全部內容
+// postQuery("SELECT id, username, title, body FROM Posts")
+
+// 直接執行資料庫查詢
+// sqlcmd("INSERT INTO posts (username, title, body) VALUES (?, ?, ?)", [user, post.title, post.body])
+
+// 防報錯出問題，主要SQL操作
+function sqlcmd(sql, arg1) {
+  console.log('sql:', sql)
+  try {
+    var results = db.query(sql, arg1)
+    console.log('sqlcmd: results=', results)
+    return results
+  } catch (error) {
+    console.log('sqlcmd error: ', error)
+    throw error
+  }
+}
+
+// 把列表轉成字典
+function postQuery(sql) {
+  let list = []
+  // table column
+  for (const [id, username, title, body] of sqlcmd(sql)) {
+    list.push({id, username, title, body})
+  }
+  console.log('postQuery: list=', list)
+  return list
+}
+```
+
+
+
+
+
 ## 小型資料庫(sqlite; 資料量<10**5)
 
 * 資料庫會幫你處理一些文字轉換，幫你把資料放在 .db檔案裏面
