@@ -12,7 +12,7 @@ VNP Server可以讓我們在家裡也可以連到公司的私有網路，如下�
 
 Server
 
--- install
+> install
 
 ```sh
 $ yum install -y ppp pptpd  # ppp是撥接的程式，主要是要裝後面的pptpd
@@ -22,7 +22,7 @@ ppp會有虛擬介面(Virtual interface)，在Vpn Server裡面
 
 
 
--- setup
+> setup
 
 ```sh
 $ vim /etc/pptpd.conf
@@ -41,6 +41,8 @@ remote ip 設定為可以給6個: 0.234、0.235、0.236、0.237、0.238、0.245
 
 
 
+> set DNS server
+
 這個可以有也可以沒有，連到內部網路，不需要，但如果要從VPN server跳出去使用其他Network，才要設定這個DNS server的參數
 
 ```sh
@@ -56,7 +58,7 @@ ms-dns 9.9.9.9
 
 
 
-設定帳號跟密碼
+> 設定帳號跟密碼
 
 ```sh
 $ vim /etc/ppp/chap-secrets
@@ -146,7 +148,7 @@ $ systemctl restart pptpd
 
 
 
--- install
+> install
 
 ```sh
 $ sudo yum install epel-release
@@ -155,7 +157,7 @@ $ wget https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm su
 
 
 
--- update package
+> update package
 
 ```sh
 $ yum install strongswan xl2tpd
@@ -163,7 +165,7 @@ $ yum install strongswan xl2tpd
 
 
 
--- setup
+> setup
 
 啟動防火牆轉發功能
 
@@ -185,7 +187,7 @@ $ sysctl -p
 
 
 
-設定PSK公鑰認證
+> 設定PSK公鑰認證
 
 ```sh
 $ vim /etc/strongswan/ipsec.secrets
@@ -243,7 +245,7 @@ session required        pam_unix.so
 
 
 
-設定PPP連線
+> 設定PPP連線
 
 ```sh
 $ vim /etc/ppp/options.xl2tpd
@@ -258,7 +260,7 @@ login
 
 
 
-設定連線的帳號密碼
+> 設定連線的帳號密碼
 
 ```sh
 $ vim /etc/ppp/chap-secrets
@@ -348,7 +350,7 @@ $ sep -s '+' 1 5 | bc # 15
 
 seq通常是用在for迴圈，跟python的range()有點像
 
-`` 代表先執行裡面的內容 !
+**`` 代表先執行裡面的內容 !**
 
 > test.sh
 

@@ -13,15 +13,13 @@ network: 適合動態環境，手動設定，比較仔細
 
 
 ```sh
-ifconfig enp03  # 只顯示enp0s3介面卡資訊
-systemctl status NetworkManager   # 查看有沒有在用NetworkManager
-systemctl status network   # 查看有沒有在用network
-systemctl stop NetworkManager
-systemctl disable NetworkManager
-systemctl start network   # 如果還沒有設定 status 會顯示fail
-systemctl enable network
-
-
+$ ifconfig enp03  # 只顯示enp0s3介面卡資訊
+$ systemctl status NetworkManager   # 查看有沒有在用NetworkManager
+$ systemctl status network   # 查看有沒有在用network
+$ systemctl stop NetworkManager
+$ systemctl disable NetworkManager
+$ systemctl start network   # 如果還沒有設定 status 會顯示fail
+$ systemctl enable network
 ```
 
 
@@ -31,8 +29,7 @@ centos 網路手動設定位置在: `/etc/sysconfig/network-scripts/`
 每個設定檔都是使用 `ifcfg` 做開頭，然後後面設介面卡名稱: `ifcfg-enp0s3`
 
 ```sh
-cd /etc/sysconfig/network-scripts/
-
+$ cd /etc/sysconfig/network-scripts/
 ```
 
 
@@ -76,7 +73,7 @@ GATEWAY=10.16.1.1
 
 
 
-> Centos7 network default
+> Centos7 network default `vim /etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
 ```sh
 TYPE=Ethernet
@@ -101,11 +98,11 @@ ONBOOT=no
 > 自己設定網路，DNS設定在別的地方`/etc/resolv.conf`
 
 ```sh
-ip route show  # 查詢內定路由器(GateWay)
-netstat -rn  # 顯示內定路由器  # 0.0.0.0 就是預設路由器的位置
+$ ip route show  # 查詢內定路由器(GateWay)
+$ netstat -rn  # 顯示內定路由器  # 0.0.0.0 就是預設路由器的位置
 ```
 
-
+`vim /etc/sysconfig/network-scripts/ifcfg-enp0s3`
 
 ```sh
 DEVICE="enp0s3"  # 網路卡名稱 
@@ -120,8 +117,8 @@ GATWAY=192.168.157.2
 
 
 
-```
-systemctl restart network
+```sh
+$ systemctl restart network
 ```
 
 
@@ -174,14 +171,16 @@ $ ip addr del 192.168.157.250/24 brd + dev enp0s3
 
 
 
--- 常用指令
+## 常用指令
+
+
 
 Linux可以變成，交換機(switch)，路由器(router)....，所以有時候需要暫時關閉介面(系統維護)，下面介紹這些指令
 
 ```sh
-ifconfig enp0s3 down   # 暫時關閉介面，ifconfig會隱藏這個介面
-ifconfig -a enp0s3  # -a 代表 ALL，可以看到所有介面(包括隱藏介面)
-ifconfig enp0s3 up   # 開啟介面
+$ ifconfig enp0s3 down   # 暫時關閉介面，ifconfig會隱藏這個介面
+$ ifconfig -a enp0s3  # -a 代表 ALL，可以看到所有介面(包括隱藏介面)
+$ ifconfig enp0s3 up   # 開啟介面
 ```
 
 
@@ -191,23 +190,23 @@ ifconfig enp0s3 up   # 開啟介面
 網路卡卡號在開機時註冊到電腦裡面，所以卡號會記錄在一個file裡面，下面的指令是修改裡面的值
 
 ```sh
-ifconfig enp0s3 hw ether 00:01:02:03:04:05
+$ ifconfig enp0s3 hw ether 00:01:02:03:04:05
 ```
 
 
 
 傳送指定大小封包 
 
-```
-ping -s 1200 8.8.8.8
+```sh
+$ ping -s 1200 8.8.8.8
 ```
 
 mtu是一次可接收的大小，可以使用下面的指令設定，大的封包會被切成大約500多分送
 
 在無線網路有時候會使用到，因為無線網路干擾比較多，所以小的封包比較容易穿透
 
-```
-ifconfig ens33 mtu 500
+```sh
+$ ifconfig ens33 mtu 500
 ```
 
 
@@ -215,7 +214,7 @@ ifconfig ens33 mtu 500
 設定內定路由器
 
 ```sh
-ip route add default via 192.168.157.2  
+$ ip route add default via 192.168.157.2  
 ```
 
 
@@ -223,7 +222,7 @@ ip route add default via 192.168.157.2
 顯示介卡統計資料
 
 ```sh
-ip -s link show enp0s3  # 顯示介卡統計資料
+$ ip -s link show enp0s3  # 顯示介卡統計資料
 ```
 
 
@@ -233,16 +232,16 @@ ip -s link show enp0s3  # 顯示介卡統計資料
 Linux ping
 
 ```sh
-ping -c 1 # 送多少封包
-ping -i 0.01  # 多少秒送一次封包
-ping -I enp0s3  # 使用哪個介面(interface) 傳送封包
-ping -Q  # 設定header，區分不同資料流，測試會用到
-ping -t  # 設定ttl(time to life)
-ping -s  # 設定一次傳送多少
-ping traceroute  # 查看路由
+$ ping -c 1 # 送多少封包
+$ ping -i 0.01  # 多少秒送一次封包
+$ ping -I enp0s3  # 使用哪個介面(interface) 傳送封包
+$ ping -Q  # 設定header，區分不同資料流，測試會用到
+$ ping -t  # 設定ttl(time to life)
+$ ping -s  # 設定一次傳送多少
+$ ping traceroute  # 查看路由
 # 查看路由表，現在很多都不會回報(不支援ICMP)，所以會顯示*
 # 所以這個指令現在比較少用
-traceroute 8.8.8.8 
+$ traceroute 8.8.8.8 
 ```
 
 
@@ -250,8 +249,8 @@ traceroute 8.8.8.8
 查看電腦連線數量
 
 ```sh
-netstat -tunp | grep ESTABLISHED | wc -l
-netstat -tunp | grep 22 | grep ESTABLISHED | wc -l  # 針對 SSH 連線顯示
+$ netstat -tunp | grep ESTABLISHED | wc -l
+$ netstat -tunp | grep 22 | grep ESTABLISHED | wc -l  # 針對 SSH 連線顯示
 ```
 
 
@@ -259,7 +258,7 @@ netstat -tunp | grep 22 | grep ESTABLISHED | wc -l  # 針對 SSH 連線顯示
 windows 查看電腦連線數量，但無法統計
 
 ```sh
-netstat -an | findstr EStABLISHED
+$ netstat -an | findstr EStABLISHED
 ```
 
 
@@ -281,8 +280,8 @@ Network: `/etc`
 **檢查伺服器有沒有開啟**
 
 ```sh
-natstat -tunlp | grep 80 # 查看http server，如果沒有顯示就代表沒有開 80 port
-natstat -tunlp | grep 22 # t:tcp u:udp n:not resolve l:listen p:process id
+$ natstat -tunlp | grep 80 # 查看http server，如果沒有顯示就代表沒有開 80 port
+$ natstat -tunlp | grep 22 # t:tcp u:udp n:not resolve l:listen p:process id
 ```
 
 如果沒有寫n，就會寫解析結果(像是22就會寫成ssh)
@@ -305,7 +304,9 @@ process id 會寫在Listen後面
 
 
 
-## 讀取介面卡傳送速率(腳本加分題)
+## 讀取介面卡傳送速率
+
+(腳本加分題)
 
 https://linux.vbird.org/linux_server/centos6/0140networkcommand.php
 
@@ -316,10 +317,10 @@ https://gist.github.com/joemiller/4069513
 https://blog.gtwang.org/linux/linux-grep-command-tutorial-examples/
 
 ```sh
-ip -s link show enp0s3  # 顯示介卡統計資料
+$ ip -s link show enp0s3  # 顯示介卡統計資料
 ```
 
-```
+```sh
 RX：網路由啟動到目前為止的封包接收情況
 TX：與 RX 相反，為網路由啟動到目前為止的傳送情況
 TX是發送數據（Transport），RX是接收數據（Receive）。
@@ -329,12 +330,10 @@ TX是發送數據（Transport），RX是接收數據（Receive）。
 
 抓取enp0s3的RX和TX
 
+```sh
+$ cat /proc/net/dev | grep enp0s3 | sed 's/:/ /g' | awk '{print $2}'
+$ cat /proc/net/dev | grep enp0s3 | sed 's/:/ /g' | awk '{print $10}'
 ```
-cat /proc/net/dev | grep enp0s3 | sed 's/:/ /g' | awk '{print $2}'
-cat /proc/net/dev | grep enp0s3 | sed 's/:/ /g' | awk '{print $10}'
-```
-
-
 
 
 
@@ -399,10 +398,8 @@ echo "接收速度: $RXBPS Bytes/second, 傳送速度: $TXBPS Bytes/second"
 
 
 
-
-
 ```sh
 # 多顯示後一行
-grep -A 1 Ubuntu /etc/os-release
+$ grep -A 1 Ubuntu /etc/os-release
 ```
 

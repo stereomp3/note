@@ -1,10 +1,12 @@
+# SAMBA
+
 [透過SAMBA讓CentOS與Windows共享目錄 - Joseph's blog (josephjsf2.github.io)](https://josephjsf2.github.io/linux/2019/11/01/share_centos_folder_with_windows.html)
 
 使用SAMBA server，可以在windows存取linux資料夾
 
 
 
-install SAMBA 
+> install SAMBA 
 
 ```sh
 $ yum install samba samba-client samba-common -y
@@ -24,7 +26,7 @@ $ ll ./test_samba/ -d  # 查看資料夾權限 # 需要加上 -d
 
 
 
--- 編輯 SAMBA 設定主要設定檔案
+> 編輯 SAMBA 設定主要設定檔案
 
 // 基本上所有伺服器的設定檔案都在/etc/下面
 
@@ -47,7 +49,7 @@ $ vim /etc/samba/smb.conf
 
 
 
-測試設定的參數有沒有問題
+> 測試設定的參數有沒有問題
 
 ```sh
 $ testparm
@@ -55,7 +57,7 @@ $ testparm
 
 
 
-啟動SAMBA
+> 啟動SAMBA
 
 記得要把防火牆關掉才可以連線到
 
@@ -67,7 +69,7 @@ $ systemctl start smb
 
 
 
-查看 samba的 port
+> 查看 samba的 port
 
 ```sh
 $ netstat -tunlp | grep smb
@@ -75,7 +77,7 @@ $ netstat -tunlp | grep smb
 
 
 
--- 建立SAMBA 存取密碼，並加入使用者
+> 建立SAMBA 存取密碼，並加入使用者
 
 ```sh
 $ smbpasswd -a user
@@ -107,7 +109,7 @@ windows要切換帳號，必須要把之前的使用者清除(windows + cmd)，�
 
 
 
-
+## 加入使用者權限
 
 ```sh
 $ groupadd manager  # 創建manager 群組
@@ -141,18 +143,9 @@ $ vim /etc/samba/smb.conf
         writeable = yes
         write list = @manager # 設定特定用戶可以寫入
         browseable = yes  # 可以瀏覽的
-        
 ```
 
-
-
-
-
-
-
-net use * /delet
-
-net use * /delet
+windows 清除站存密碼: `net use * /delet`
 
 
 
@@ -162,7 +155,7 @@ net use * /delet
 
 課本 9-6 
 
-## 磁碟配額設定
+# 磁碟配額設定
 
 如果要自訂義磁碟分配(/home(5G)、/boot(500M)、/swap(分配記憶體的2被)、/(剩下的))，需要在安裝的時候告訴系統
 
@@ -175,26 +168,24 @@ quota: 磁碟配額。用來限制使用者的磁碟空間用量
 要使用超級使用者才可以進行磁碟操作
 
 ```sh
-vim /boot/grub/grub.config
+$ vim /boot/grub/grub.config
 ```
 
 修改時間，跟者課本設定參數
 
+> 進入單人模式
+
 ```sh
-grub2-mkconfig -o /boot/grub2/grub.config
-
-reboot  # 重新啟動  # 按下e
-
-
+$ grub2-mkconfig -o /boot/grub2/grub.config
+$ reboot  # 重新啟動  # 按下e
 
 # 找到quite，按下f10，進入單人模式，
-vim /etc/fstab
+$ vim /etc/fstab
 # usrquota,grpquota   加入到default後面，根據user和group進行分類
 
-
-mount -o remount /  # 掛載到根目錄
-mount -a
-cat /etc/mtab  # 檢查quota是否出現，沒有出現(/dev/sda  noquota)就要重新啟動
+$ mount -o remount /  # 掛載到根目錄
+$ mount -a
+$ cat /etc/mtab  # 檢查quota是否出現，沒有出現(/dev/sda  noquota)就要重新啟動
 ```
 
 

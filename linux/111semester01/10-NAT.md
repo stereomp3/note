@@ -1,4 +1,4 @@
-## NAT Server
+# NAT Server
 
 NAT的作用是讓內網IP可以連到外網IP，可以透過NAT，架設出自己想要的各種網路
 
@@ -28,8 +28,8 @@ VM3: 10.0.0.2，代表外網(public IP)
 
 架構圖
 
-```
-VM1 (192.168.1.1)——-(192.168.1.254)VM 2 (10.1.1.1)=======(10.1.1.2) VM 3
+```sh
+$ VM1 (192.168.1.1)——-(192.168.1.254)VM 2 (10.1.1.1)=======(10.1.1.2) VM 3
 ```
 
 
@@ -42,27 +42,27 @@ brd指的是broadcast廣播位置
 
 VM1: 設定ens33的IP和設定內定路由器
 
-```
-ip addr add 192.168.1.1/24 brd + dev enp0s3
-ip route add default via 192.168.1.254s
-ip route show
+```sh
+$ ip addr add 192.168.1.1/24 brd + dev enp0s3
+$ ip route add default via 192.168.1.254s
+$ ip route show
 ```
 
 VM2: 設定ens33的IP和設定內定路由器
 
-```
-ip addr add 192.168.1.254/24 brd + dev enp0s3
-ip addr add 10.0.0.1/24 brd + dev enp0s8
+```sh
+$ ip addr add 192.168.1.254/24 brd + dev enp0s3
+$ ip addr add 10.0.0.1/24 brd + dev enp0s8
 
-ip route show
+$ ip route show
 ```
 
 VM3: 設定ens33的IP和設定內定路由器
 
-```
-ip addr add 10.0.0.2/24 brd + dev enp0s3
-ip route add default via 10.0.0.1
-ip route show
+```sh
+$ ip addr add 10.0.0.2/24 brd + dev enp0s3
+$ ip route add default via 10.0.0.1
+$ ip route show
 ```
 
 
@@ -71,8 +71,8 @@ ip route show
 
 如果設錯了，可以使用下面的指令，還原特定網路介面
 
-```
-ifconfig enp0s3 0
+```sh
+$ ifconfig enp0s3 0
 ```
 
 
@@ -87,16 +87,16 @@ ifconfig enp0s3 0
 
 MASQUERADE 代表把內部網路連到外部網路，做把內部網路做轉換(VM1的IP設定成10.0.0.1)
 
-```
-iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o enp0s8 -j MAS QUERADE
+```sh
+$ iptables -t nat -A POSTROUTING -s 192.168.1.0/24 -o enp0s8 -j MASQUERADE
 ```
 
 
 
 > 把VM2變成Router
 
-```
-echo 1 > /proc/sys/net/ipv4/ip_forward
+```sh
+$ echo 1 > /proc/sys/net/ipv4/ip_forward
 ```
 
 
@@ -113,8 +113,8 @@ echo 1 > /proc/sys/net/ipv4/ip_forward
 
 -U 代表直接讀取緩存區內容、-n代表不解析，直接顯示IP位置、-i代表接收定介面卡的資訊
 
-```
-tcpdump -U -n -i enp0s3
+```sh
+$ tcpdump -U -n -i enp0s3
 ```
 
 
@@ -167,12 +167,12 @@ echo '$#= '$#
 
 
 
-```
-./test.sh 1 2 3 4 aa bb
-$0= ./test.sh
-$1= 1
-$2= 2
-$#= 6
+```sh
+$ ./test.sh 1 2 3 4 aa bb
+$ $0= ./test.sh
+$ $1= 1
+$ $2= 2
+$ $#= 6
 ```
 
 
@@ -180,11 +180,11 @@ $#= 6
 如果想要把條件寫在一行，就可以使用下面的方式
 
 ```sh
-if [ 5 -gt 3 ]; then echo 1; else echo 0; fi
+$ if [ 5 -gt 3 ]; then echo 1; else echo 0; fi
 ```
 
-```
-for i in `seq 5`; do echo $i; done
+```sh
+$ for i in `seq 5`; do echo $i; done
 ```
 
 
@@ -213,9 +213,9 @@ done
 
 
 ```sh
-mkdir test
-cd test
-touch {a..d}.jpg
+$ mkdir test
+$ cd test
+$ touch {a..d}.jpg
 ```
 
 > rename.sh: 寫一個檔案，把四個檔案改成a.gif、b.gif...d.gif
