@@ -116,5 +116,78 @@ cat /dev/urandom | md5sum
 test02
 
 ```
+systemctl stop httpd
+```
+
+
+
+
+
+test03
+
+```
+ssh
+```
+
+
+
+# ansible
+
+```
+ansible-playbook hello.yml
+```
+
+
+
+```
+--- 
+- hosts: server1
+  tasks:
+  - name: show date
+    command: date
+    register: show_date
+  - name: install httpd server
+    service: name=httpd state=restarted
+  - name: install httpd server
+    shell: ps aux|grep httpd
+    register: check_httpd
+  - name: stdout httpd
+    debug:
+      msg: "{{check_httpd.stdout_lines}}"
+  - name: stdout dates
+    debug:
+      msg: "{{show_date.stdout_lines}}"
+  
+  handlers:
+    - name: restart httpd
+      service: name=httpd state=restarted
+```
+
+
+
+
+
+```
+--- 
+- hosts: server1
+  tasks:
+  - name: show date
+    command: date
+    register: show_date
+  - name: install httpd server
+    service: name=httpd state=start
+  - name: install httpd server
+    shell: ps aux|grep httpd
+    register: check_httpd
+  - name: install httpd server
+    debug:
+      msg: "{{check_httpd.stdout_lines}}"
+  - name: install httpd server
+    debug:
+      msg: "{{show_date.stdout_lines}}"
+  
+  handlers:
+    - name: restart httpd
+      service: name=httpd state=started
 ```
 
