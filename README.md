@@ -10,15 +10,16 @@
 
 # note
 
-| title                  | description     |
-| ---------------------- | --------------- |
-| [**web**](./web)       |                 |
-| [unity](./unity)       |                 |
-| [python](./python)     |                 |
-| [c++](./c++)           |                 |
-| [linux](./linux)       |                 |
-| [ML](./MechineLearing) | mechine learing |
-| [SP][./sp]             | system program  |
+| title                  | description                                 |
+| ---------------------- | ------------------------------------------- |
+| [**web**](./web)       |                                             |
+| [unity](./unity)       |                                             |
+| [python](./python)     |                                             |
+| [c++](./c++)           |                                             |
+| [linux](./linux)       |                                             |
+| [ML](./MechineLearing) | mechine learing                             |
+| [SP][./sp]             | system program                              |
+|                        | computer architecture and operating systems |
 
 
 
