@@ -1,0 +1,1 @@
+20231107 題目 Running Sum of 1d Array (使用 vector，講解 C 程式碼運行概念、pointer)、Richest Customer Wealth
