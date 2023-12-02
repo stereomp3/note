@@ -26,7 +26,7 @@
 
 > introduction
 
-題目 lock. Max Consecutive Ones，for 迴圈紀錄最常連續 1
+題目 lock. Max Consecutive Ones，for 迴圈紀錄最長連續 1
 
 題目 1295. Find Numbers with Even Number of Digits，使用迴圈判斷位數，然後對位數 % 2 判斷機偶數，有一個解法很猛，使用 log10 判斷位數，然後用 &1 判斷機偶數
 
@@ -84,12 +84,83 @@
 
 題目 Third Maximum Number，使用 set，長度小於三回傳最大，長度大於三把最大前兩個從 set 去除，取第三大的
 
-題目 
+題目 Find All Numbers Disappeared in an Array，創建一個 range [1, nums.size()] 的陣列 tmp，對 nums 陣列進行 for，當裡面元素與 tmp 一樣，就把 tmp 那個元素設為 0，最後用 for 迴圈，跳過 0 元素，把答案放到新的 vector ans
 
-題目 
-
-題目 (這題因為 II 要訂閱解鎖，所以寫 III)
+題目 (這題因為 II 要訂閱解鎖，所以寫 III) 1004. Max Consecutive Ones III，使用 Sliding Window 下去解，兩個變數 right 和 left，right 會一直往前，left 要等 right 走過的 0 (使用 numZeroes 紀錄) 超過 K 才會增加，當 left 走一步，且走過的是 0 ，numZeroes 就減一
 
 
 
 # ArrayAndstring
+
+> Introduction to Array
+
+
+
+>  Introduction to 2D Arrary
+
+
+
+> Introduction to String
+
+
+
+> Two-Pointer Technique
+
+
+
+> Conclusion
+
+
+
+
+
+# HashTable
+
+
+
+# LinkedList
+
+
+
+# Sorted
+
+
+
+# Queue&Stack
+
+
+
+# Heap
+
+
+
+# RecursionI
+
+
+
+# BinaryTree
+
+
+
+# Trie
+
+
+
+# N-aryTree
+
+
+
+# BinarySearchTree
+
+
+
+# RecursionII
+
+
+
+# DynamicProgramming
+
+
+
+# Graph
+
