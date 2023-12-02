@@ -1,0 +1,95 @@
+# BeginnerGuide
+
+20231107 
+
+題目 1480. Running Sum of 1d Array (使用 vector(c++)、Heap(c  malloc)，講解 C 程式碼運行概念、pointer，使用前面的數字加上自己(DP的概念才會是最佳解))
+
+題目 1672. Richest Customer Wealth (簡單，不過可以在第一個 for 迴圈裡面就利用一個變數比較大小)
+
+20231108 
+
+題目 412. Fizz Buzz (int to str and int to char(c++), strdup(c), sprintf(c))
+
+題目 1342. Number of Steps to Reduce a Number to Zero (簡單題目，num>>=1 == num=num/2)
+
+20231109
+
+題目 876. Middle of the Linked List (structure, class, single link list, 使用兩個走不同步的 LinkNode 才會是最佳解(一次 while 就可以搞定))
+
+題目 383. Ransom Note (String erase (c++),String replace(python), strlen(c)，最佳解是使用紀錄每個字母的方式，透過比較兩個字母出現次數，查看能不能 construct)
+
+
+
+# Array101
+
+20231120
+
+> introduction
+
+題目 lock. Max Consecutive Ones，for 迴圈紀錄最常連續 1
+
+題目 1295. Find Numbers with Even Number of Digits，使用迴圈判斷位數，然後對位數 % 2 判斷機偶數，有一個解法很猛，使用 log10 判斷位數，然後用 &1 判斷機偶數
+
+題目 lock. Squares of a Sorted Array，利用數列性質(已經 sort 好了)，從左右拿取數字並平方就可以得到 sort 好的平方數列
+
+> inserting item into an array
+
+題目 1089. Duplicate Zeros，創建一個 list，有 0 就再加入一個 0，把這個 list 複製到題目的 arr
+
+
+
+20231128
+
+> inserting item into an array
+
+題目 Merge Sorted Array，使用兩個 pos 紀錄目前位置，並放到矩陣裡面
+
+> deleting items from an array
+
+題目 Remove Element，利用一個 index 紀錄目前位置，如果有和 val 重複的數字，index就不往前，反之則往前
+
+
+
+20231129
+
+> deleting items from an array
+
+題目 Remove Duplicates from Sorted Array，從 1 開始判斷，判斷前面的數是不是和目前一樣，如果不一樣代表這個數可以放到 nums 而不重複
+
+
+
+20231130
+
+> search for items in an array
+
+題目 Check If N and Its Double Exist，使用兩個 for 迴圈 (bubble sort 的概念)，比較兩個數有沒有符合 `arr[i] == 2 * arr[j]` 
+
+題目 Valid Mountain Array，使用兩個變數一個從後面一個從前面，當兩個變數交會就代表是 Mountain Array
+
+> in-place operations
+
+題目 Replace Elements with Greatest Element on Right Side，從後面開始跑只需要 O(n)，前面開始則會變 O(n^2)
+
+題目  Move Zeroes 利用一個變數 index 存非 0 的次數，當 nums[index] == 0 然後 nums[當前位置] != 0，就讓兩個數互換
+
+題目 Sort Array By Parity，利用一個變數 index 存非 0 的次數，當 nums[index] % 2 == 0(偶數) 就讓 index 往前，nums[index] % 2 == 1(奇數)當前位置是偶數 nums[i] % 2 == 0，就讓兩個數互換
+
+
+
+20231202
+
+> Conclusion
+
+題目  Height Checker 給一個陣列 heights，回傳排序後的陣列與原陣列有多少數字不同。創一個 heights 的複製 vector，使用 bubble sort 對他排序，然後跟原本的 heights 進行比較
+
+題目 Third Maximum Number，使用 set，長度小於三回傳最大，長度大於三把最大前兩個從 set 去除，取第三大的
+
+題目 
+
+題目 
+
+題目 (這題因為 II 要訂閱解鎖，所以寫 III)
+
+
+
+# ArrayAndstring
