@@ -1,6 +1,8 @@
+# BeginnerGuide
+
 20231107 
 
-題目 1480. Running Sum of 1d Array (使用 vector(c++)、Heap(c)，講解 C 程式碼運行概念、pointer，使用前面的數字加上自己(DP的概念才會是最佳解))
+題目 1480. Running Sum of 1d Array (使用 vector(c++)、Heap(c  malloc)，講解 C 程式碼運行概念、pointer，使用前面的數字加上自己(DP的概念才會是最佳解))
 
 題目 1672. Richest Customer Wealth (簡單，不過可以在第一個 for 迴圈裡面就利用一個變數比較大小)
 
@@ -18,15 +20,7 @@
 
 
 
-11/10 面試
-
-11/11~11/18 確診+感冒，直接進入躺平模式
-
-
-
-else
-
-推薦流程
+## schedule
 
 Array101 -> ArrayAndstring -> HashTable -> LinkedList -> Sorted -> Queue&Stack -> Heap -> RecursionI -> BinaryTree -> Trie -> N-aryTree -> BinarySearchTree -> RecursionII -> DynamicProgramming -> Graph
 
