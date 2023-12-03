@@ -18,9 +18,9 @@
 
 20231128
 
-> inserting item into an array
-
 題目 Merge Sorted Array，使用兩個 pos 紀錄目前位置，並放到矩陣裡面
+
+
 
 > deleting items from an array
 
@@ -29,8 +29,6 @@
 
 
 20231129
-
-> deleting items from an array
 
 題目 Remove Duplicates from Sorted Array，從 1 開始判斷，判斷前面的數是不是和目前一樣，如果不一樣代表這個數可以放到 nums 而不重複
 
