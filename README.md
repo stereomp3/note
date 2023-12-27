@@ -10,6 +10,8 @@
 
 # note
 
+https://stereomp3.github.io/note/
+
 | title                  | description                                 |
 | ---------------------- | ------------------------------------------- |
 | [**web**](./web)       |                                             |
@@ -18,9 +20,10 @@
 | [c++](./c++)           |                                             |
 | [linux](./linux)       |                                             |
 | [ML](./MechineLearing) | mechine learing                             |
-| [SP][./sp]             | system program                              |
+| [SP](./sp)             | system program                              |
 |                        | computer architecture and operating systems |
 
 
 
 <hr>
+
