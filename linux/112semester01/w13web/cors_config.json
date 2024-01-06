@@ -1,0 +1,15 @@
+[
+ {
+	 "AllowedHeaders": [
+	   "Authorization"
+	 ],
+	 "AllowedMethods": [
+	   "GET"
+	 ],
+	 "AllowedOrigins": [
+	   "https://web-smallko.s3.amazonaws.com"
+	 ],
+	 "ExposeHeaders": [],
+	 "MaxAgeSeconds": 3000
+ }
+]
