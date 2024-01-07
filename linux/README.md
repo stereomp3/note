@@ -157,37 +157,37 @@ graph LR
  classDef point fill:#fff;
  classDef exam fill:#999;
  classDef start fill:#ddd;
- click 1A "112semester01/01.md#AWS註冊" _blank
- click 1B "112semester01/01.md#建立EC2" _blank
- click 2A "112semester01/02.md#監控帳單" _blank
- click 3A "112semester01/03.md#VPC" _blank
- click 3B "112semester01/03.md#Subnet" _blank
- click 3C "112semester01/03.md#IGW" _blank
- click 4D "112semester01/04.md#NAT_GateWay" _blank
- click 6A "112semester01/06.md#AWS_LAMP" _blank
- click 6B "112semester01/06.md#AMI" _blank
- click 7C "112semester01/07.md#ASG" _blank
- click 7E "112semester01/07.md#TG" _blank
- click 8F "112semester01/08.md#ALB" _blank
- click 9G "112semester01/09.md#期中考題目架構圖" _blank
- click 10A "112semester01/10.md#RDS" _blank
- click 10B "112semester01/10.md#EBS" _blank
- click 10C "112semester01/10.md#EIP " _blank
- click 11D "112semester01/11.md#EFS" _blank
- click 11E "112semester01/11.md#IAM" _blank
- click 12A "112semester01/12.md#S3" _blank
- click 13B "112semester01/13.md#CLI" _blank
- click 13C "112semester01/13.md#Domain_name" _blank
- click 13D "112semester01/13.md#Cors" _blank
- click 14A "112semester01/14.md#Route_53" _blank
- click 14B "112semester01/14.md#CDN" _blank
- click 14C "112semester01/14.md#ACM" _blank
- click 15D "112semester01/15.md#CloudFront" _blank
- click 15E "112semester01/15.md#WAF" _blank
- click 15F "112semester01/15.md#DynamoDB" _blank
- click 16A "112semester01/16.md#Lambda" _blank
- click 16B "112semester01/16.md#API_GW" _blank
- click 17C "112semester01/17.md#Terraform" _blank
+ click 1A "https://github.com/stereomp3/note/blob/main/linux/112semester01/01.md#AWS註冊" _blank
+ click 1B "https://github.com/stereomp3/note/blob/main/linux/112semester01/01.md#建立EC2" _blank
+ click 2A "https://github.com/stereomp3/note/blob/main/linux/112semester01/02.md#監控帳單" _blank
+ click 3A "https://github.com/stereomp3/note/blob/main/linux/112semester01/03.md#VPC" _blank
+ click 3B "https://github.com/stereomp3/note/blob/main/linux/112semester01/03.md#Subnet" _blank
+ click 3C "https://github.com/stereomp3/note/blob/main/linux/112semester01/03.md#IGW" _blank
+ click 4D "https://github.com/stereomp3/note/blob/main/linux/112semester01/04.md#NAT_GateWay" _blank
+ click 6A "https://github.com/stereomp3/note/blob/main/linux/112semester01/06.md#AWS_LAMP" _blank
+ click 6B "https://github.com/stereomp3/note/blob/main/linux/112semester01/06.md#AMI" _blank
+ click 7C "https://github.com/stereomp3/note/blob/main/linux/112semester01/07.md#ASG" _blank
+ click 7E "https://github.com/stereomp3/note/blob/main/linux/112semester01/07.md#TG" _blank
+ click 8F "https://github.com/stereomp3/note/blob/main/linux/112semester01/08.md#ALB" _blank
+ click 9G "https://github.com/stereomp3/note/blob/main/linux/112semester01/09.md#期中考題目架構圖" _blank
+ click 10A "https://github.com/stereomp3/note/blob/main/linux/112semester01/10.md#RDS" _blank
+ click 10B "https://github.com/stereomp3/note/blob/main/linux/112semester01/10.md#EBS" _blank
+ click 10C "https://github.com/stereomp3/note/blob/main/linux/112semester01/10.md#EIP " _blank
+ click 11D "https://github.com/stereomp3/note/blob/main/linux/112semester01/11.md#EFS" _blank
+ click 11E "https://github.com/stereomp3/note/blob/main/linux/112semester01/11.md#IAM" _blank
+ click 12A "https://github.com/stereomp3/note/blob/main/linux/112semester01/12.md#S3" _blank
+ click 13B "https://github.com/stereomp3/note/blob/main/linux/112semester01/13.md#CLI" _blank
+ click 13C "https://github.com/stereomp3/note/blob/main/linux/112semester01/13.md#Domain_name" _blank
+ click 13D "https://github.com/stereomp3/note/blob/main/linux/112semester01/13.md#Cors" _blank
+ click 14A "https://github.com/stereomp3/note/blob/main/linux/112semester01/14.md#Route_53" _blank
+ click 14B "https://github.com/stereomp3/note/blob/main/linux/112semester01/14.md#CDN" _blank
+ click 14C "https://github.com/stereomp3/note/blob/main/linux/112semester01/14.md#ACM" _blank
+ click 15D "https://github.com/stereomp3/note/blob/main/linux/112semester01/15.md#CloudFront" _blank
+ click 15E "https://github.com/stereomp3/note/blob/main/linux/112semester01/15.md#WAF" _blank
+ click 15F "https://github.com/stereomp3/note/blob/main/linux/112semester01/15.md#DynamoDB" _blank
+ click 16A "https://github.com/stereomp3/note/blob/main/linux/112semester01/16.md#Lambda" _blank
+ click 16B "https://github.com/stereomp3/note/blob/main/linux/112semester01/16.md#API_GW" _blank
+ click 17C "https://github.com/stereomp3/note/blob/main/linux/112semester01/17.md#Terraform" _blank
 ```
 
 
