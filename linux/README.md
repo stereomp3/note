@@ -119,6 +119,8 @@
 
 因為教的東西較多，下面有課程教學的總覽圖
 
+下方的方塊不能直接點擊，要按下右鍵然後開新分頁，不知道為啥 github 支援的 README mermaid 有點問題 ...
+
 ```mermaid
 graph LR
  1[Week01-02]:::start --> |week01| 1A[AWS init]:::point
