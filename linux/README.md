@@ -148,16 +148,46 @@ graph LR
  14[Week14-15]:::start --> |week14| 14A[Route 53]
  14A[Route 53] --> 14B[CDN]
  14B[CDN] --> 14C[ACM]
- 14C[ACM] --> |week15| 15C[CloudFront]
- 15C[CloudFront] --> 15D[WAF]
- 15D[WAF] --> 15E[DynamoDB]
+ 14C[ACM] --> |week15| 15D[CloudFront]
+ 15D[CloudFront] --> 15E[WAF]
+ 15E[WAF] --> 15F[DynamoDB]
  16[Week16-17]:::start --> |week16| 16A[Lambda]
  16A[Lambda] --> 16B[API GW]
  16B[API GW] --> |week17| 17C[Terraform]:::point
  classDef point fill:#fff;
  classDef exam fill:#999;
  classDef start fill:#ddd;
- click 1A "112semester01/01.md" _blank
+ click 1A "112semester01/01.md#AWS註冊" _blank
+ click 1B "112semester01/01.md#建立EC2" _blank
+ click 2A "112semester01/02.md#監控帳單" _blank
+ click 3A "112semester01/03.md#VPC" _blank
+ click 3B "112semester01/03.md#Subnet" _blank
+ click 3C "112semester01/03.md#IGW" _blank
+ click 4D "112semester01/04.md#NAT_GateWay" _blank
+ click 6A "112semester01/06.md#AWS_LAMP" _blank
+ click 6B "112semester01/06.md#AMI" _blank
+ click 7C "112semester01/07.md#ASG" _blank
+ click 7E "112semester01/07.md#TG" _blank
+ click 8F "112semester01/08.md#ALB" _blank
+ click 9G "112semester01/09.md#期中考題目架構圖" _blank
+ click 10A "112semester01/10.md#RDS" _blank
+ click 10B "112semester01/10.md#EBS" _blank
+ click 10C "112semester01/10.md#EIP " _blank
+ click 11D "112semester01/11.md#EFS" _blank
+ click 11E "112semester01/11.md#IAM" _blank
+ click 12A "112semester01/12.md#S3" _blank
+ click 13B "112semester01/13.md#CLI" _blank
+ click 13C "112semester01/13.md#Domain_name" _blank
+ click 13D "112semester01/13.md#Cors" _blank
+ click 14A "112semester01/14.md#Route_53" _blank
+ click 14B "112semester01/14.md#CDN" _blank
+ click 14C "112semester01/14.md#ACM" _blank
+ click 15D "112semester01/15.md#CloudFront" _blank
+ click 15E "112semester01/15.md#WAF" _blank
+ click 15F "112semester01/15.md#DynamoDB" _blank
+ click 16A "112semester01/16.md#Lambda" _blank
+ click 16B "112semester01/16.md#API_GW" _blank
+ click 17C "112semester01/17.md#Terraform" _blank
 ```
 
 
@@ -171,7 +201,7 @@ graph LR
 |   [week05](112semester01/05.md)   | 國慶日放假 !                                                 | 2023/10/10 |
 | **[week06](112semester01/06.md)** | [AWS LAMP](112semester01/06.md#AWS_LAMP)<br /><ul><li>create db</li><li>build php website</li></ul>[ELB](112semester01/06.md#ELB)<br /><ul><li>[Subnet](112semester01/06.md#Subnet)</li><li>[RT](112semester01/06.md#RT)</li></ul>[AMI](112semester01/06.md#AMI)<br /><ul><li>create image</li><li>create EC2 by AMI</li></ul> | 2023/10/17 |
 |   [week07](112semester01/07.md)   | [ASG](112semester01/07.md#ASG)<br /><ul><li>[實驗1: 簡單的 ASG](112semester01/07.md#簡單的ASG)<ul><li>create template</li><li>setting network</li><li>setting configuration</li><li>testing</li></ul></li><li>[實驗2: 根據使用效能調整虛擬機數量的 ASG](112semester01/07.md#根據使用效能調整虛擬機數量的ASG)<ul><li>create template</li><li>setting scaling policies</li><li>testing</li></ul></li></ul>[ELB](112semester01/07.md#ELB)<br /><ul><li>[TG](112semester01/07.md#TG)<ul><li>setting name and vpc</li><li>Register targets</li></ul></li><li>[ALB](112semester01/07.md#ALB)<ul><li>setting name and network</li><li>setting vpc and subnet</li><li>setting security group</li><li>testing</li></ul></li></ul> | 2023/10/24 |
-|   [week08](112semester01/08.md)   | [商業型網頁雲端架構](112semester01/08.md#商業型網頁雲端架構)<br />[ALB](112semester01/08.md#ALB)<br /><ul><li>create 4 EC2</li><li>create 2 target group</li><li>associate with load balancer</li><li>[ALB weight](112semester01/08.md#ALB_weight)<ul><li>add target group</li><li>setting weight</li></ul></li><li>[ALB_HTTP_Header](112semester01/08.md#ALB HTTP Header)<ul><li>Add condition</li><li>set http header</li><li>add target group</li><li>Query string</li><li>setting priority</li></ul></li><li>[ALB page forbidden](112semester01/08.md#ALB_page_forbidden)<ul><li>add condition</li><li>setting action</li></ul></li></ul>[ALB & ASG](112semester01/08.md#ALB&ASG)<br /> | 2023/10/31 |
+|   [week08](112semester01/08.md)   | [商業型網頁雲端架構](112semester01/08.md#商業型網頁雲端架構)<br />[ALB](112semester01/08.md#ALB)<br /><ul><li>create 4 EC2</li><li>create 2 target group</li><li>associate with load balancer</li><li>[ALB weight](112semester01/08.md#ALB_weight)<ul><li>add target group</li><li>setting weight</li></ul></li><li>[ALB HTTP Header](112semester01/08.md#ALB_HTTP_Header)<ul><li>Add condition</li><li>set http header</li><li>add target group</li><li>Query string</li><li>setting priority</li></ul></li><li>[ALB page forbidden](112semester01/08.md#ALB_page_forbidden)<ul><li>add condition</li><li>setting action</li></ul></li></ul>[ALB & ASG](112semester01/08.md#albasg)<br /> | 2023/10/31 |
 |   [week09](112semester01/09.md)   | [期中考題目架構圖](112semester01/09.md#期中考題目架構圖)<br />[建立網路環境](112semester01/09.md#建立網路環境)<br /><ul><li>網路處裡</li><li>連線處裡</li><li>建立 router</li></ul>[建立虛擬機](112semester01/09.md#建立虛擬機)<br /><ul><li>創建虛擬機</li></ul>[private setting](112semester01/09.md#private_setting)<br /><ul><li>建立 NAT GateWay 讓 private 可以連上網路</li><li>建立 router</li><li>加入資料庫</li></ul>[public_setting](112semester01/09.md#public_setting)<br /><ul><li>創建網頁</li></ul>[Load Balancer](112semester01/09.md#Load_Balancer)<br /><ul><li>create TG</li><li>create ALB</li></ul> | 2023/11/7  |
 |   [week10](112semester01/10.md)   | [RDS](112semester01/10.md#RDS)<br /><ul><li>Create DB</li><li>setting VPC</li><li>login DB with EC2</li><li>create website to connect DB</li></ul>[EBS](112semester01/10.md#EBS)<br /><ul><li>setting volume and AZ</li><li>Attach volume</li><li>use EC2 to mount the EBC</li><li>detach volume</li></ul>[EIP](112semester01/10.md#EIP)<br /><ul><li>create Elastic IP</li><li>Associate Elastic IP address</li></ul> | 2023/11/14 |
 |   [week11](112semester01/11.md)   | [EFS](112semester01/11.md#EFS)<br /><ul><li>Enable VPC dns hostname</li><li>create File System</li><li>Add SG</li><li>create Access point</li><li>create 2 EC2</li><li>EC2 Shared folder</li></ul>[IAM](112semester01/11.md#IAM)<br /><ul><li>[IAM 觀念](112semester01/11.md#IAM觀念)<ul><li>permission policy</li><li>user and role</li><li>Management Console & CLI & SDK </li></ul></li><li>[IAM 實作](112semester01/11.md#IAM實作)<ul><li>create user </li><li>add permissions</li><li>view billing</li></ul></li></ul> | 2023/11/21 |
@@ -179,7 +209,7 @@ graph LR
 |   [week13](112semester01/13.md)   | [CLI](112semester01/13.md#CLI)<br /><ul><li>create Access key</li><li>install AWS linux package</li><li>setting Linux aws config</li><li>install python 3.11</li></ul>[Domain name](112semester01/13.md#Domain_name)<br /><ul><li>use GoDaddy to create domain name</li><li>create hosted zone</li><li>AWS Domain name takeover</li><li>create Record</li></ul>[Cors](112semester01/13.md#Cors)<br /><ul><li>create 2 s3 buckets</li><li>add bucket policy</li><li>upload website files</li><li>Cross-origin resource sharing</li></ul> | 2023/12/05 |
 | **[week14](112semester01/14.md)** | [Route_53](112semester01/14.md#Route_53)<br /><ul><li>use Record to set EC2 HTTP IP to domain name</li><li>Create CNAME Record</li><li>S3 替換 Domain name</li><li>use Route 53 to create easy LB</li></ul>[CDN](112semester01/14.md#CDN)<br /><ul><li>create distribution</li><li>check what is my ip</li></ul>[ACM](112semester01/14.md#ACM)<br /><ul><li>request a Certificate</li><li>Cloud front + DNS+ HTTPS</li></ul> | 2023/12/12 |
 | **[week15](112semester01/15.md)** | [CloudFront](112semester01/15.md#CloudFront)<br />[WAF](112semester01/15.md#WAF)<br /><ul><li>WAF & Shield</li><li>Block IP</li><li>Block IP with count</li></ul>[DynamoDB](112semester01/15.md#DynamoDB)<br /><ul><li>create table</li><li>add item</li><li>use IAM user to access DynamoDB</li><li>create IAM role</li></ul> | 2023/12/19 |
-|   [week16](112semester01/16.md)   | [Lambda](112semester01/16.md#Lambda)<br /><ul><li>Attach Role policy</li><li>create Lambda function</li><li>testing Lambda  function</li><li>use Lambda to read、write and modify DynamoDB</li></ul>[API_GW](112semester01/16.md#API GW)<br /><ul><li>create REST API</li><li>Create resouce</li><li>testing with postman</li></ul>[Terraform](112semester01/16.md#Terraform)<br /><ul><li>install Terraform</li><li>use Terraform to deploy EC2 instance、VPC、Subnet</li></ul> | 2023/12/26 |
+|   [week16](112semester01/16.md)   | [Lambda](112semester01/16.md#Lambda)<br /><ul><li>Attach Role policy</li><li>create Lambda function</li><li>testing Lambda  function</li><li>use Lambda to read、write and modify DynamoDB</li></ul>[API GW](112semester01/16.md#API_GW)<br /><ul><li>create REST API</li><li>Create resouce</li><li>testing with postman</li></ul>[Terraform](112semester01/16.md#Terraform)<br /><ul><li>install Terraform</li><li>use Terraform to deploy EC2 instance、VPC、Subnet</li></ul> | 2023/12/26 |
 |   [week17](112semester01/17.md)   | [Terraform](112semester01/17.md#Terraform)<br /><ul><li>[使用 terraform 實作可以用外網連線的 EC2 網頁](112semester01/17.md#使用terraform實作可以用外網連線的EC2網頁)</li><li>[加分題: 使用 terraform 實作 ALB 連線到兩台EC2](112semester01/17.md#使用terraform實作ALB連線到兩台EC2)</li> | 2024/01/02 |
 |   [week18](112semester01/18.md)   |                                                              | 2024/01/09 |
 
