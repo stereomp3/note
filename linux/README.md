@@ -4,7 +4,7 @@
 
 * 111學年度下學期: [Linux系統自動化運維](#Linux系統自動化運維)
 
-* 112學年度上學期: [雲端通訊整合實務 ](#Linux作業系統實務)
+* 112學年度上學期: [雲端通訊整合實務 ](#雲端通訊整合實務)
 
   
 
@@ -12,7 +12,7 @@
 
 
 
-# 雲端通訊整合實務 Linux作業系統實務
+# Linux作業系統實務
 
 使用 Centos 作業系統，和 Visual Box 虛擬機
 
@@ -113,28 +113,73 @@
 
 
 
-# 雲端通訊整合實務 
+# 雲端通訊整合實務
 
 使用 AWS 網頁版雲端服務，和 VMware 虛擬機指令控制雲端服務
 
+因為教的東西較多，下面有課程教學的總覽圖
+
+```mermaid
+graph LR
+ 1[Week01-02]:::start --> |week01| 1A[AWS init]:::point
+ 1A[AWS init]:::point --> 1B[EC2]
+ 1B[EC2] --> |week02| 2A[Monitor billing]
+ 3[Week03-04]:::start --> |week03| 3A[VPC]
+ 3A[VPC] --> 3B[Subnet]
+ 3B[Subnet] --> 3C[IGW]
+ 3C[IGW] --> |week04| 4D[NAT GW]
+ 4D[NAT GW] --> 4F[EC2]
+ 6[Week06-07]:::start --> |week06| 6A[AWS LAMP]
+ 6A[AWS LAMP] --> 6B[AMI]
+ 6B[AMI] --> |week07| 7C[ASG]
+ 7C[ASG] --> 7D[TG]
+ 7D[TG] --> 7E[ELB]
+ 8[Week08-09]:::start --> |week08| 8F[ALB]
+ 8F[ALB] --> |week09| 9G[exam]:::exam
+ 10[Week10-11]:::start --> |week10| 10A[RDS]
+ 10A[RDS] --> 10B[EBS]
+ 10B[EBS] --> 10C[EIP]
+ 10C[EIP] --> |week11| 11D[EFS]
+ 11D[EFS] --> 11E[IAM]
+ 12[Week12-13]:::start --> |week12| 12A[S3]
+ 12A[S3] --> |week13| 13B[CLI]
+ 13B[CLI] --> 13C[Domain name]
+ 13C[Domain name] --> 13D[Cors]
+ 14[Week14-15]:::start --> |week14| 14A[Route 53]
+ 14A[Route 53] --> 14B[CDN]
+ 14B[CDN] --> 14C[ACM]
+ 14C[ACM] --> |week15| 15C[CloudFront]
+ 15C[CloudFront] --> 15D[WAF]
+ 15D[WAF] --> 15E[DynamoDB]
+ 16[Week16-17]:::start --> |week16| 16A[Lambda]
+ 16A[Lambda] --> 16B[API GW]
+ 16B[API GW] --> |week17| 17C[Terraform]:::point
+ classDef point fill:#fff;
+ classDef exam fill:#999;
+ classDef start fill:#ddd;
+ click 1A "112semester01/01.md" _blank
+```
+
+
+
 |               week                | content                                                      | date       |
 | :-------------------------------: | :----------------------------------------------------------- | ---------- |
-|   [week01](112semester01/01.md)   | [課程簡介](112semester01/01.md#課程簡介)<br /><ul><li>為甚麼要學AWS?</li><li> 雲端資源簡述</li><li> 課程內容</li></ul><br />[AWS 註冊](112semester01/01.md#AWS註冊)<br /><ul><li>注: 需要有信用卡才可以註冊</li></ul><br />[建立EC2](112semester01/01.md#建立EC2)<br /><ul><li>選擇軟硬體資源</li><li> 設定 Key pair</li><li> 設定 VPC 與網路</li><li>設定 security group</li><li> 測試 ICMP</li></ul> | 2023/09/12 |
-|   [week02](112semester01/02.md)   | [Centos7環境設定](112semester01/02.md#Centos7環境設定)<br /><ul><li>[使用Centos的好處](112semester01/02.md#使用Centos的好處)</li><li> [virtulBox安裝教學](112semester01/02.md#virtulBox安裝教學)</li></ul> | 2023/09/19 |
-|   [week03](112semester01/03.md)   | [Network](112semester01/03.md#Network)<ul><li>NAT</li><li>Bridged AdapterInternal </li><li>Network</li></ul>[遠端操作](112semester01/03.md#遠端操作)<br />[export env](112semester01/03.md#export-env)<br />[Linux指令](112semester01/03.md#Linux指令)<ul><li>開關機指令</li><li>查看編輯檔案內容</li></ul> | 2023/09/26 |
-|   [week04](112semester01/04.md)   | [架設簡單伺服器](112semester01/04.md#架設簡單伺服器)<br />[Linux指令](112semester01/04.md#Linux指令)<ul><li>關閉防火牆</li><li>mv、echo、cat、curl</li></ul> | 2023/10/03 |
-|   [week05](112semester01/05.md)   | [Linux 發行版本](112semester01/05.md#Linux-發行版本)<br />[shell programming](112semester01/05.md#shell-programming)<br />[Linux 指令](112semester01/05.md#Linux-指令)<br /><ul><li>查看Linux 版本</li><li>查看變數</li><li>修改密碼新</li><li>增使用者</li></ul>[重制root密碼](112semester01/05.md#重制root密碼) | 2023/10/10 |
-| **[week06](112semester01/06.md)** | [file system](112semester01/06.md#file-system)<br /><ul><li>[磁碟分割(hard disk partition)](112semester01/06.md#磁碟分割(hard-disk-partition))</li><li>[Linux系統載入](112semester01/06.md#Linux系統載入)[Linux指令](112semester01/05.md#Linux指令)<ul><li>ping</li><li>ifconfig</li><li>關機指令</li><li>重啟指令</li><li>系統操作指令</li></ul></li></ul> | 2023/10/17 |
-|   [week07](112semester01/07.md)   | [Linux指令格式](112semester01/07.md#Linux指令格式)<br />[Linux檔案](112semester01/07.md#Linux檔案)<br />[使用遠端破解密碼](112semester01/07.md#使用遠端破解密碼)<br />[Linux指令](112semester01/07.md#Linux指令)<ul><li>顯示使用者指令</li><li>ctrl指令</li><li>`pwd; cd ~; echo; $SHELL、man`</li></ul> | 2023/10/24 |
-|   [week08](112semester01/08.md)   | [specific file](112semester01/08.md#specific-file)<br />[Command](112semester01/08.md#Command)<br /><ul><li>[ls](112semester01/08.md#ls)</li><li>[man](112semester01/08.md#man)</li><li>[tree](112semester01/08.md#tree)</li></ul>[Linux指令](112semester01/08.md#Linux指令)<ul><li>查看帳號文件</li><li>column分割指令</li><li>創建連結指令</li><li>`netstat; touch; kill; stat; ls; cp; cat; tail; head; mkdir; rmdir`</li></ul> | 2023/10/31 |
-|              week09               | 放假!                                                        | 2023/11/7  |
-|   [week10](112semester01/10.md)   | [切換kernal使用特定版本的功能](112semester01/10.md#切換kernal使用特定版本的功能)<br />[提權](112semester01/10.md#提權)<br />[Linux指令](112semester01/10.md#Linux指令)<ul><li>查看Linux 版本</li><li>判斷前一個指令是否成功</li><li>網路資料抓取</li><li>快速清除文件內容</li><li>`cd; sed; tail; mkdir; cat; mkdir; rmdir`</li></ul> | 2023/11/14 |
-|              week11               | 期中考!                                                      | 2023/11/21 |
-|   [week12](112semester01/12.md)   | [專有名詞介紹](112semester01/12.md#專有名詞介紹)<ul><li>集縮比</li><li>PT test</li><li>stacking</li></ul>[Linux指令](112semester01/12.md#Linux指令)<ul><li>檔案權限改變、查看檔案權限</li><li>改變Linux預設指令結果</li><li>查看檔案位置</li><li>查看資料使用量</li><li>stdin、stdout、stderr應用操作</li></ul> | 2023/11/28 |
-|   [week13](112semester01/13.md)   | [命令管道](112semester01/13.md#命令管道)<br />[撰寫系統腳本](112semester01/13.md#撰寫系統腳本)<br />[搜尋檔案(find)](112semester01/13.md#搜尋檔案(find))<br />[增量備份](112semester01/13.md#增量備份)<br />[Linux指令](112semester01/13.md#Linux指令)<ul><li>檔案權限數字操作</li><li>清空指令輸出到螢幕上的內容</li><li>一次創建多個檔案</li></ul> | 2023/12/05 |
-| **[week14](112semester01/13.md)** | [grep](112semester01/14.md#grep)<br /><ul><li>[grep參數](112semester01/14.md#grep參數)</li><li>[正規表達式規則](112semester01/14.md#正規表達式規則)</li><li>[Linux指令](112semester01/14.md#Linux指令)</li></ul>[vim](112semester01/14.md#vim)<ul><li>[Vi 底行命令](112semester01/14.md#Vi-底行命令)</li></ul>[硬體設備](112semester01/14.md#硬體設備)<ul><li>[mount](112semester01/14.md#mount)</li><li>[Linux指令](112semester01/14.md#Linux指令)<ul><li>查看硬體設備</li><li>查看目前使用的終端信息</li></ul></li></ul> | 2023/12/12 |
-| **[week15](112semester01/14.md)** | [掛載格式硬碟](112semester01/14.md#掛載格式硬碟)<br />[掛載磁碟](112semester01/14.md#掛載磁碟)<br />[群組](112semester01/14.md#群組)<br />[Shell](112semester01/14.md#Shell)<br />[Linux指令](112semester01/14.md#Linux指令)<ul><li>echo 高級使用方法</li><li>`xargs; awk`</li></ul> | 2023/12/19 |
-|   [week16](112semester01/15.md)   | [使用者權限](112semester01/15.md#使用者權限)<br />[crach](112semester01/15.md#crach)<br />[Linux指令](112semester01/15.md#Linux指令)<ul><li>查看有多少使用者在線上</li><li>新增使用者</li><li>取出`/etc/passwd`文件的用戶名和系統名稱</li><li>查看、改變權限</li></ul> | 2023/12/26 |
-|   [week17](112semester01/16.md)   | [process](112semester01/16.md#process)<br />[driver](112semester01/16.md#driver)<br />[Linux指令](112semester01/16.md#Linux指令)<ul><li>查看行程樹、查看記憶體和行程資訊</li><li></li><li>ps指令詳細用法、nice</li><li>`kill; pkill; job; fg; bg; sleep; !!`</li></ul> | 2024/01/02 |
-|   [week18](112semester01/18.md)   | [內部指令與外部指令](112semester01/18.md#內部指令與外部指令)<br />[Linux特殊符號](112semester01/18.md#Linux特殊符號)<br />[zombie process](112semester01/18.md#zombie-process)<br />[orphan process](112semester01/18.md#orphan-process)<br />[firework](112semester01/18.md#firework)<br />[Linux指令](112semester01/18.md#Linux指令)<ul><li>`&&`  和 `||` 的應用</li><li></li><li>`set; env`</li><li>`su` vs `su-`</li></ul> | 2024/01/09 |
+|   [week01](112semester01/01.md)   | [課程簡介](112semester01/01.md#課程簡介)<br /><ul><li>為甚麼要學AWS?</li><li> 雲端資源簡述</li><li> 課程內容</li></ul>[AWS 註冊](112semester01/01.md#AWS註冊)<br />注: 需要有信用卡才可以註冊<br />[建立EC2](112semester01/01.md#建立EC2)<br /><ul><li>Select resources</li><li> setting Key pair</li><li> setting VPC and Network</li><li>setting security group</li><li> testing ICMP</li></ul> | 2023/09/12 |
+|   [week02](112semester01/02.md)   | [監控帳單](112semester01/02.md#監控帳單)<br /><ul><li>Create SNS topic</li><li> Create Subscription</li><li> CloudWatch Alarm </li></ul>[EC2、VPC架構簡述](112semester01/02.md#EC2、VPC架構簡述)<br /><ul><li>VPC、ACL、EC2、SG</li><li> EC2 Security Group</li></ul>[Linux To AWS](112semester01/02.md#LinuxToAWS)<br /><ul><li>使用 Linux 連線到 AWS</li><li> 在本地創建檔案並丟到雲端 (AWS)</li></ul> | 2023/09/19 |
+|   [week03](112semester01/03.md)   | [雲端架構介紹](112semester01/03.md#雲端架構介紹)<br /><ul><li>VPC & subnet & IGW & EC2 & NAT GW</li><li>elastic network interface</li><li>EBS</li><li>ELB & ASG</li></ul>[VPC & subnet & IGW  & EC2 & NAT GW](112semester01/03.md#VPC&subnet&IGW)<br /><ul><li>[VPC](112semester01/03.md#VPC)<ul><li>setting VPC name and IPv4 CIDR</li></ul><li>[Subnet](112semester01/03.md#Subnet)</li><ul><li>set region and IPv4 CIDR</li></ul></li><li>[IGW](112semester01/03.md#IGW)<ul><li>setting name</li><li>Attach to a VPC</li></ul></li><li>[RT](112semester01/03.md#RT)<ul><li>Edit routes</li><li>Subnet association</li></ul></li><li>[EC2](112semester01/03.md#EC2)</li></ul>[LinuxToAWS](112semester01/03.md#LinuxToAWS)<br /><ul><li>centos7 登入到 AWS EC2</li><li>建立網站 HTML 文件</li><li>創建包含圖片的 HTML</li></ul> | 2023/09/26 |
+|   [week04](112semester01/04.md)   | [VPC & subnet & IGW & EC2 & NAT GW](112semester01/04.md#VPC&subnet&IGW&EC2&NAT_GW)<br /><ul><li>enable auto-assign public IP</li><li>Create Private instance</li><li>[NAT GateWay](112semester01/04.md#NAT_GateWay)<ul><li>create NAT GateWay</li><li>Allowcate Elastic IP</li></ul></li><li>[RT](112semester01/04.md#RT)<ul><li>Edit routes</li><li>Subnet association</li></ul></li><li>[Mariadb](112semester01/04.md#Mariadb)<ul><li>install mariadb</li><li>create user</li><li>connect to private db (EC2)</li></ul></li></ul> | 2023/10/03 |
+|   [week05](112semester01/05.md)   | 國慶日放假 !                                                 | 2023/10/10 |
+| **[week06](112semester01/06.md)** | [AWS LAMP](112semester01/06.md#AWS_LAMP)<br /><ul><li>create db</li><li>build php website</li></ul>[ELB](112semester01/06.md#ELB)<br /><ul><li>[Subnet](112semester01/06.md#Subnet)</li><li>[RT](112semester01/06.md#RT)</li></ul>[AMI](112semester01/06.md#AMI)<br /><ul><li>create image</li><li>create EC2 by AMI</li></ul> | 2023/10/17 |
+|   [week07](112semester01/07.md)   | [ASG](112semester01/07.md#ASG)<br /><ul><li>[實驗1: 簡單的 ASG](112semester01/07.md#簡單的ASG)<ul><li>create template</li><li>setting network</li><li>setting configuration</li><li>testing</li></ul></li><li>[實驗2: 根據使用效能調整虛擬機數量的 ASG](112semester01/07.md#根據使用效能調整虛擬機數量的ASG)<ul><li>create template</li><li>setting scaling policies</li><li>testing</li></ul></li></ul>[ELB](112semester01/07.md#ELB)<br /><ul><li>[TG](112semester01/07.md#TG)<ul><li>setting name and vpc</li><li>Register targets</li></ul></li><li>[ALB](112semester01/07.md#ALB)<ul><li>setting name and network</li><li>setting vpc and subnet</li><li>setting security group</li><li>testing</li></ul></li></ul> | 2023/10/24 |
+|   [week08](112semester01/08.md)   | [商業型網頁雲端架構](112semester01/08.md#商業型網頁雲端架構)<br />[ALB](112semester01/08.md#ALB)<br /><ul><li>create 4 EC2</li><li>create 2 target group</li><li>associate with load balancer</li><li>[ALB weight](112semester01/08.md#ALB_weight)<ul><li>add target group</li><li>setting weight</li></ul></li><li>[ALB_HTTP_Header](112semester01/08.md#ALB HTTP Header)<ul><li>Add condition</li><li>set http header</li><li>add target group</li><li>Query string</li><li>setting priority</li></ul></li><li>[ALB page forbidden](112semester01/08.md#ALB_page_forbidden)<ul><li>add condition</li><li>setting action</li></ul></li></ul>[ALB & ASG](112semester01/08.md#ALB&ASG)<br /> | 2023/10/31 |
+|   [week09](112semester01/09.md)   | [期中考題目架構圖](112semester01/09.md#期中考題目架構圖)<br />[建立網路環境](112semester01/09.md#建立網路環境)<br /><ul><li>網路處裡</li><li>連線處裡</li><li>建立 router</li></ul>[建立虛擬機](112semester01/09.md#建立虛擬機)<br /><ul><li>創建虛擬機</li></ul>[private setting](112semester01/09.md#private_setting)<br /><ul><li>建立 NAT GateWay 讓 private 可以連上網路</li><li>建立 router</li><li>加入資料庫</li></ul>[public_setting](112semester01/09.md#public_setting)<br /><ul><li>創建網頁</li></ul>[Load Balancer](112semester01/09.md#Load_Balancer)<br /><ul><li>create TG</li><li>create ALB</li></ul> | 2023/11/7  |
+|   [week10](112semester01/10.md)   | [RDS](112semester01/10.md#RDS)<br /><ul><li>Create DB</li><li>setting VPC</li><li>login DB with EC2</li><li>create website to connect DB</li></ul>[EBS](112semester01/10.md#EBS)<br /><ul><li>setting volume and AZ</li><li>Attach volume</li><li>use EC2 to mount the EBC</li><li>detach volume</li></ul>[EIP](112semester01/10.md#EIP)<br /><ul><li>create Elastic IP</li><li>Associate Elastic IP address</li></ul> | 2023/11/14 |
+|   [week11](112semester01/11.md)   | [EFS](112semester01/11.md#EFS)<br /><ul><li>Enable VPC dns hostname</li><li>create File System</li><li>Add SG</li><li>create Access point</li><li>create 2 EC2</li><li>EC2 Shared folder</li></ul>[IAM](112semester01/11.md#IAM)<br /><ul><li>[IAM 觀念](112semester01/11.md#IAM觀念)<ul><li>permission policy</li><li>user and role</li><li>Management Console & CLI & SDK </li></ul></li><li>[IAM 實作](112semester01/11.md#IAM實作)<ul><li>create user </li><li>add permissions</li><li>view billing</li></ul></li></ul> | 2023/11/21 |
+|   [week12](112semester01/12.md)   | [S3](112semester01/12.md#S3)<br /><ul><li>create Bucket</li><li>Upload file</li><li>remove Block public access</li><li>add bucket policy</li><li>enable Bucket Versioning</li><li>[兩個不同地區的 bucket 同步](112semester01/12.md#兩個不同地區的bucket同步)</li><li>[利用 bucket 生成靜態網站](112semester01/12.md#利用bucket生成靜態網站)</li></ul>[IAM](112semester01/12.md#IAM)<br /><ul><li>create s3 permissions</li><li>EC2 存取 S3</li></ul> | 2023/11/28 |
+|   [week13](112semester01/13.md)   | [CLI](112semester01/13.md#CLI)<br /><ul><li>create Access key</li><li>install AWS linux package</li><li>setting Linux aws config</li><li>install python 3.11</li></ul>[Domain name](112semester01/13.md#Domain_name)<br /><ul><li>use GoDaddy to create domain name</li><li>create hosted zone</li><li>AWS Domain name takeover</li><li>create Record</li></ul>[Cors](112semester01/13.md#Cors)<br /><ul><li>create 2 s3 buckets</li><li>add bucket policy</li><li>upload website files</li><li>Cross-origin resource sharing</li></ul> | 2023/12/05 |
+| **[week14](112semester01/14.md)** | [Route_53](112semester01/14.md#Route_53)<br /><ul><li>use Record to set EC2 HTTP IP to domain name</li><li>Create CNAME Record</li><li>S3 替換 Domain name</li><li>use Route 53 to create easy LB</li></ul>[CDN](112semester01/14.md#CDN)<br /><ul><li>create distribution</li><li>check what is my ip</li></ul>[ACM](112semester01/14.md#ACM)<br /><ul><li>request a Certificate</li><li>Cloud front + DNS+ HTTPS</li></ul> | 2023/12/12 |
+| **[week15](112semester01/15.md)** | [CloudFront](112semester01/15.md#CloudFront)<br />[WAF](112semester01/15.md#WAF)<br /><ul><li>WAF & Shield</li><li>Block IP</li><li>Block IP with count</li></ul>[DynamoDB](112semester01/15.md#DynamoDB)<br /><ul><li>create table</li><li>add item</li><li>use IAM user to access DynamoDB</li><li>create IAM role</li></ul> | 2023/12/19 |
+|   [week16](112semester01/16.md)   | [Lambda](112semester01/16.md#Lambda)<br /><ul><li>Attach Role policy</li><li>create Lambda function</li><li>testing Lambda  function</li><li>use Lambda to read、write and modify DynamoDB</li></ul>[API_GW](112semester01/16.md#API GW)<br /><ul><li>create REST API</li><li>Create resouce</li><li>testing with postman</li></ul>[Terraform](112semester01/16.md#Terraform)<br /><ul><li>install Terraform</li><li>use Terraform to deploy EC2 instance、VPC、Subnet</li></ul> | 2023/12/26 |
+|   [week17](112semester01/17.md)   | [Terraform](112semester01/17.md#Terraform)<br /><ul><li>[使用 terraform 實作可以用外網連線的 EC2 網頁](112semester01/17.md#使用terraform實作可以用外網連線的EC2網頁)</li><li>[加分題: 使用 terraform 實作 ALB 連線到兩台EC2](112semester01/17.md#使用terraform實作ALB連線到兩台EC2)</li> | 2024/01/02 |
+|   [week18](112semester01/18.md)   |                                                              | 2024/01/09 |
 
