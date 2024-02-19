@@ -66,10 +66,14 @@
 
 > Conclusion
 
-題目
+20240219
 
-題目
+題目 Rotate Array，創造一個陣列 tmp 紀錄 nums，然後根據位移從 tmp 填入到 nums 裡面。
 
-題目
+題目 Pascal's Triangle II，建立 rowIndex 的 pascal 三角形，然後傳回最後一 row
 
-題目
+題目 Reverse Words in a String，使用 `vector <string>` 存全部的子字串，有 ' ' 就代表進入下一個字串，最後用 ans 字串拿取  `vector <string> `的全部內容
+
+題目 Reverse_Words_in_a_String_III，跟上一題基本一樣，只是把下面 ans 放入順序替換一下，最佳解是針對頭尾做旋轉
+
+ 
