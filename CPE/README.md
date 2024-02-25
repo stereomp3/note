@@ -11,7 +11,7 @@
 - [struct](struct.md)
 - [dp](dp.md)
 - [python](python.md)
-- [unordered_set](unordered_set.md)
+- [hash_set](hash_set.md)
 
 reference
 [使用string](https://openhome.cc/Gossip/CppGossip/string2.html)  
