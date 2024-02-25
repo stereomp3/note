@@ -8,11 +8,8 @@
 
   
 
-
-
-
-
 # Linux作業系統實務
+
 
 使用 Centos 作業系統，和 Visual Box 虛擬機
 
