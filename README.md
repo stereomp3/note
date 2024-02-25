@@ -10,6 +10,7 @@
 
 # note
 
+<<<<<<< HEAD
 https://stereomp3.github.io/note/
 
 | title                  | description                                 |
@@ -22,6 +23,20 @@ https://stereomp3.github.io/note/
 | [ML](./MechineLearing) | mechine learing                             |
 | [SP](./sp)             | system program                              |
 |                        | computer architecture and operating systems |
+=======
+<details><summary> my note web</summary>https://stereomp3.github.io/note/</details>
+
+| title                  | description     |
+| ---------------------- | --------------- |
+| [**web**](./web)       |                 |
+| [unity](./unity)       |                 |
+| [python](./python)     |                 |
+| [c++](./c++)           |                 |
+| [linux](./linux)       |                 |
+| [ML](./MechineLearing) | mechine learing |
+| [SP](./sp)             | system program  |
+| [CPE](./CPE)           |                 |
+>>>>>>> 395fbc9b000b176f52fd684fabb3f8b9f15003a1
 
 
 
