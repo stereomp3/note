@@ -162,3 +162,30 @@ int main(){
 
 
 * `mp.count(key);` : 檢查 key 是否存在 map 中，如果有 return 1，反之 return 0
+
+* pair 取值是使用 .
+
+```c++
+int main()
+{
+    multimap<int, int> map_a;
+    iMap[1] = 1;
+    iMap[2] = 2;
+    iMap[5] = 3;
+    iMap[4] = 4;
+
+    vector<pair<int, int>> map_b;
+    for (auto it = map_a.begin(); it != map_a.end(); it++)
+        map_b.push_back(make_pair(it->first, it->second));
+
+    sort(map_b.begin(), map_b.end(), 
+        [](const pair<int, int> &x, const pair<int, int> &y) -> int {
+        return x.second < y.second;
+    });
+
+    for (auto it = map_b.begin(); it != map_b.end(); it++)
+        cout << it->first << ':' << it->second << '\n';
+    return 0;
+}
+```
+

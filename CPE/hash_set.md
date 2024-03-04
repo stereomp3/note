@@ -23,6 +23,7 @@
    
     - hashset.count(int); set 裡面是否有該元素，有的話回傳 0
     - hashset.empty; 如果 set 為空 回傳非 0 值
+    - hashset.find; 如果 hashset.find == hashset.end() 就代表沒找到，找到傳回 iter 位置
 5. 取得長度
    
     - hashset.size();
@@ -86,7 +87,15 @@ bool findDuplicates(vector<Type>& keys) {
 
 
 
+* multiset 與 set 用法差不多，但會保留重複的元素，資料由小到大排序。
 
+  ```c++
+  multiset<int> ms;
+  ms.erase(val); // 會刪除所有值為 val 的元素。
+  ms.erase(st.find(val));
+  ```
+
+  
 
 # unordered_map
 
@@ -120,17 +129,18 @@ bool findDuplicates(vector<Type>& keys) {
 
 3. 刪除
 
-   - hashset.erase(int); 刪除特定元素 delete key
-   - hashset.clear(); 全部刪掉
+   - hashmap.erase(int); 刪除特定元素 delete key
+   - hashmap.clear(); 全部刪掉
 
 4. 獲取
 
-   - hashset.count(int); set 裡面是否有該元素，有的話回傳 0
-   - hashset.empty; 如果 set 為空 回傳非 0 值
+   - hashmap.count(int); map 裡面是否有該 key，有的話回傳 0
+   - hashmap.empty; 如果 map 為空 回傳非 0 值
+   - hashmap.find; 如果 hashmap.find == hashmap.end() 就代表沒找到，找到傳回 iter 位置
 
 5. 取得長度
 
-   - hashset.size();
+   - hashmap.size();
 
 
 
@@ -172,3 +182,66 @@ int main() {
 }
 ```
 
+
+
+
+
+# others
+
+chatGPT
+
+map: https://en.cppreference.com/w/cpp/container/map
+
+pair: https://en.cppreference.com/w/cpp/utility/pair
+
+In C++, the difference in usage between `pair` and `map` when accessing their elements is due to the way they are implemented and the syntax chosen for those implementations.
+
+1. **Pair (`std::pair`)**: This is a simple data structure that holds two values. In a `pair`, you access its elements directly using the dot (`.`) operator because the elements are stored directly within the `pair` object.
+
+   ```c++
+   pair<int, int> a = make_pair(0, 0);
+   printf("%d, %d", a.first, a.second); // Accessing elements using dot operator
+   ```
+
+2. **Map (`std::map`)**: This is an associative container that stores key-value pairs. In a `map`, each element is a key-value pair, and when you iterate over a `map`, you are iterating over these key-value pairs. Since each element is a pair itself, you access the key and value of each element using the arrow (`->`) operator because you're accessing a member of the pair (which is a pointer).
+
+   ```c++
+   map<int, int> m;
+   m[0] = 1;
+   for (auto i = m.begin(); i != m.end(); ++i) {
+       printf("%d, %d", i->first, i->second); // Accessing elements using arrow operator
+   }
+   ```
+
+In summary:
+
+- For `pair`, elements are accessed directly using the dot (`.`) operator because the elements are stored directly within the `pair` object.
+- For `map`, elements are accessed using the arrow (`->`) operator because each element is a pair, and you're accessing members of that pair through a pointer.
+
+
+
+因為 map 的 pair 使用 [allocator pointer](https://zh.wikipedia.org/zh-tw/%E5%88%86%E9%85%8D%E5%99%A8_(C%2B%2B)) 讓 STL 變成模板 T，可以放入各種資料型態
+
+In C++, `Allocator::pointer` refers to the type used to represent a pointer to an allocated memory block.
+
+When you allocate memory dynamically using an allocator (such as `std::allocator`), the `pointer` type within that allocator specifies the type of pointer that is returned when memory is allocated.
+
+For example, in the context of `std::allocator`, `std::allocator::pointer` is typically defined as `T*`, where `T` is the type of object being allocated. This means that when you allocate memory using `std::allocator`, you get back a pointer of type `T*`.
+
+Here's a simple example:
+
+```c++
+cppCopy code#include <iostream>
+#include <memory>
+
+int main() {
+    std::allocator<int> alloc;
+    std::allocator<int>::pointer ptr = alloc.allocate(1); // Allocating memory for one integer
+    *ptr = 42; // Assigning a value to the allocated memory
+    std::cout << *ptr << std::endl; // Output: 42
+    alloc.deallocate(ptr, 1); // Deallocating the allocated memory
+    return 0;
+}
+```
+
+In this example, `std::allocator<int>::pointer` is `int*`, which means `ptr` is a pointer to an integer. It's used to access the memory allocated by the allocator.
