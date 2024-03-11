@@ -24,30 +24,37 @@ bool compare(const pair< int, int > &x, const pair< int, int > &y){
 
 
 * reverse(vec.begin(), vec.end()): 
+  
    > 對vector進行反轉
 
 
 * for_each(vec.begin(), vec.end(), lambda運算式):
+  
    > 可以對vector裡面的每個元素進行操作
 
 
 * find(vec.begin(), vec.end(), search): 
+  
    > 對vector進行查找，search可從終端輸入，可把find傳入迭代器裡或auto變數裡面 
 
 
 * find_if(vec.begin(), vec.end(), lambda運算式): 
+  
    > 對vector進行查找，找到條件滿足就回傳，可把find_if傳入迭代器或auto變數裡面
 
 
 * copy_if(vec.begin(), vec.end(), 存放複製的第一個元素(如果存放陣列不夠大會報錯), lambda運算式 ):
+  
    > 對vector進行複製，符合條件回傳陣列給vector，可把copy_if傳入迭代器裡或auto變數裡面 
 
 
 * remove_if(vec.begin(), vec.end(), lambda運算式): 
+  
    > remove_if 並不是真的把元素從原容器去除了，它只是將要去除的元素往後移，然後傳回這些元素的起點，如果這些元素你真的不要了，可以使用 vector 的 erase 方法
 
 
 * transform(vec.begin(), vec.end(), 存放複製的第一個元素, lambda運算式);
+  
    > 一級函式的語言中愛談的 map，在 C++ 中可以使用 tranform 來解決
 
 
@@ -306,5 +313,30 @@ int main() {
 output:
 ```
 110 120 210 300 310 410 550 660 800 980
+```
+
+
+
+
+
+https://blog.csdn.net/qq_37529913/article/details/120008481
+
+```c++
+#include <iostream>     // std::cout
+#include <iterator>     // std::next
+#include <list>         // std::list
+using namespace std;
+ 
+//创建并初始化一个 list 容器
+list<int> mylist{ 1,2,3,4,5 };
+list<int>::iterator it = mylist.begin();
+//获取一个距离 it 迭代器 2 个元素的迭代器，由于 2 为正数，newit 位于 it 右侧
+auto newit = next(it, 2);
+cout << "next(it, 2) = " << *newit << endl;
+ 
+//n为负数，newit 位于 it 左侧
+it = mylist.end();
+newit = next(it, -2);
+cout << "next(it, -2) = " << *newit;
 ```
 

@@ -24,7 +24,8 @@
    * str.at(i) - 存取索引值為 i 的元素的值，
    * str.front() - 回傳 string 第一個元素的值。
    * str.back() - 回傳 string 最尾元素的值。
-
+   * **需要 printf 出來的時候需要使用 str.c_str()**
+   
 5. 取得長度
    * str.empty() - 如果 vector 內部為空，則傳回 true 值。
    * str.size() - 取得 vector 目前持有的元素個數。(也可以用str.length())
