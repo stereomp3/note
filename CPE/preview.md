@@ -109,10 +109,9 @@ bool IsPrime(int n){
 * 單引號 : 34
 * 雙引號 : 39
 * LF換行 : 10
-
 * 迭代取值用 *it
-
 * 二階陣列初始化: `int a[10][10] = {0}` ， 如果是char的話，預設好像就是0
 * cout 要控制位數可以用: `cout << fixed <<  setprecision(4) << float`， 需要 `include <iomanip>`
+* `printf("%.6f", myFloat);` 輸出 6 位數的 float 或是 double
 * 費式數列: https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/cpp02/fibonacci.html
 * 上下左右判斷可以用矩陣: `int arr[4] = {-1,0,1,0}`
