@@ -1,4 +1,4 @@
-contest: https://hackmd.io/@jakao/collegiateCompetitionsProgramming#NCPC
+contest: https://hackmd.io/@jakao/collegiateCompetitionsProgramming#NCPC、https://hackmd.io/@sa072686/cp/%2F%40sa072686%2FrJ05YiGOB
 
 time
 
@@ -10,9 +10,9 @@ time
 
 03 - 12/1~12/7；實際完成時間 20240219 (開學才動工，趕快飆車，希望這學期可以趕完 QAQ)
 
-04 - 12/8~12/15；實際完成時間 20240311
+04 - 12/8~12/15；實際完成時間 20240311 ，重要篇章
 
-05 - 12/16~12/23；實際完成時間 
+05 - 12/16~12/23；實際完成時間 20240318
 
 06 - 12/24~12/31；實際完成時間
 

@@ -4,7 +4,7 @@
 - `cin >> var` ，從終端取到值後，放入var
 - 程式跑不夠快，可以用map，速度會提升(尤其是在for迴圈多的時候)
 - cout 像是 printf()，下面是範例:  
-    
+  
 - `long long 型態讀取: scanf("%lld", &n)、unsigned long long int 讀取 scanf("%ull", &n)`
 
 1. input:
@@ -37,7 +37,7 @@ We have 8 books.
 ---
 
 - cin 像是 scanf()，下面是範例:  
-    
+  
 
 1. intput:
 
@@ -77,13 +77,13 @@ Input two integer: 3 4
 #### math.h
 
 - 使用次方: `pow(a, n)`
-    
+  
 - 使用圓周率: `M_PI`
-    
+  
 - 使用cos、sin: `cos(i * M_PI / 180), sin(i * M_PI / 180)`， i是度數
-    
+  
 - 指標
-    
+  
 
 ```c
 int *ptr, num = 20;
@@ -93,9 +93,9 @@ ptr = &num
 ```
 
 - 指標變數不論他只向的變數型態為何，都站4 bytes
-    
+  
 - 導入所有 C++ STD lib
-    
+  
 
 ```c
 #include <bits/stdc++.h>
@@ -109,3 +109,4 @@ int main()
 ```
 
 - **遇到浮點數運算記得一定要使用 double 而不是 float**
+- `c_str()` 可以把 c++ string 轉換成以NULL結尾的字串 EX: `str.c_str()`
