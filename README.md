@@ -1,7 +1,3 @@
-<div>  <h1>test Code Embed</h1>  <script src="https://gist.github.com/xiaoxiangmoe/6e00c4cf5972f8aa180313a86c809670.js"></script></div>
-
-==測試==:  $ y=ax+b $
-
 # **國立金門大學 資工系 魏仲彥 筆記**
 
 
@@ -45,3 +41,8 @@ https://stereomp3.github.io/note/
 
 
 <hr>
+
+
+$\vec x \stackrel{\operatorname{def}}{=} (x_1,\cdots , x_n) % $
+$\sum \limits _{1<i<n \atop i\neq j}$
+${n+1 \choose k }$
