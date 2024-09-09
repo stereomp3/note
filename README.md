@@ -46,3 +46,9 @@ https://stereomp3.github.io/note/
 $\vec x \stackrel{\operatorname{def}}{=} (x_1,\cdots , x_n) % $
 $\sum \limits _{1<i<n \atop i\neq j}$
 ${n+1 \choose k }$
+
+
+
+ ${y=ax+b}$
+
+==螢光標記==
