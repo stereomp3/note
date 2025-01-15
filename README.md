@@ -55,4 +55,4 @@ ${n+1 \choose k }$
 
 Liquid Exception: Liquid syntax error
 
-需要把 {{ 改成 { {
+需要把 兩個 { 改成 { { (沒寫{ { 沒空格的是因為會再次報錯)
