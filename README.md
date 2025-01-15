@@ -52,3 +52,7 @@ ${n+1 \choose k }$
  ${y=ax+b}$
 
 ==螢光標記==
+
+Liquid Exception: Liquid syntax error
+
+需要把 {{ 改成 { {

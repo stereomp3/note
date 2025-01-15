@@ -139,7 +139,7 @@ Do not Find
 
 using namespace std;
 int main(){
-    map<string, string> veggy_map = {{"1", "Yam",},{"2", "Pumpkin",},{"3", "Ginger",},{"4", "Melon",},{"5", "Beetroot",},{"6", "Spinach",}};
+    map<string, string> veggy_map = { {"1", "Yam",},{"2", "Pumpkin",},{"3", "Ginger",},{"4", "Melon",},{"5", "Beetroot",},{"6", "Spinach",}};
 
     cout << "Unsorted - " << endl;
     for (const auto & [key, value] : veggy_map) {  // const 會比較快也會比較安全
