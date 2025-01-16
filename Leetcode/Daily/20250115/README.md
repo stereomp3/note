@@ -1,4 +1,4 @@
-# 每日題目
+# [Minimize XOR](https://leetcode.com/submissions/detail/1509476933/)
 
 > 問題
 
