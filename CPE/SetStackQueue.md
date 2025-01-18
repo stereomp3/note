@@ -100,6 +100,8 @@ unordered_set<int> s(begin(nums), end(nums));   // insert every nums[i] in hashs
 
 > 重要處理步驟，求出最小路徑(bfs)
 
+![](picture/BFS.png)
+
 ```c++
 int step = 0;
 while(!q.empty()){
