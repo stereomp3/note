@@ -1,3 +1,19 @@
+初始化
+
+```c++
+struct node {
+    int x, y;
+     
+    node(int _x = 0, int _y = 0) {
+        x = _x;
+        y = _y;
+    }
+}; 
+node n = node(x, y);
+```
+
+
+
 ```c++
 #include <iostream>
 using namespace std;
